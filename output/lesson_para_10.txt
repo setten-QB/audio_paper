@@ -1,0 +1,16 @@
+第10パラグラフです。
+
+The broader implication is that next-vector prediction may be a viable path to more efficient language models, especially as context lengths and generation lengths keep growing.
+---
+日本語訳：より広い含意としては、next-vector prediction は、より効率的な言語モデルに向かう有望な道筋になりうる、特にコンテキスト長や生成長が伸び続ける場合にはそうである、ということです。  
+補足：broader implication は「個別結果を超えた全体的な示唆」という論文でよく使う表現です。viable path は「現実的に成立しうる方向性」、context lengths / generation lengths は長文入力・長文生成のスケーリング上の論点として重要です。
+
+The paper’s strongest contribution is not just the chunked representation, but the full supporting toolkit: robust compression, likelihood-free training, evaluation, and sampling.
+---
+日本語訳：この論文の最大の貢献は、単なる chunked representation ではなく、それを支える一式の技術基盤、すなわち堅牢な圧縮、likelihood-free training、評価、そしてサンプリングにあります。  
+補足：not just A, but B は「貢献の中心はAにとどまらずBにある」という強調です。supporting toolkit は、単独のアイデアではなく実装・学習・評価まで含む総合的枠組みを指しています。likelihood-free training は明示的な尤度最適化に依らない学習設定を示します。
+
+At the same time, the K equals 1 gap versus standard Transformers shows this is still an early-stage paradigm, with clear room for better latent spaces, better generative objectives, and new scaling laws involving semantic bandwidth as a third axis alongside parameters and data.
+---
+日本語訳：同時に、K=1 における標準的な Transformer との差は、この枠組みがまだ初期段階のパラダイムであることを示しており、より良い潜在空間、より良い生成目的、さらにパラメータ数とデータ量に並ぶ第3の軸として semantic bandwidth を含む新たなスケーリング則に向けた明確な改善余地があります。  
+補足：gap versus standard Transformers は既存手法との性能差を指します。early-stage paradigm は「有望だが未成熟な研究方向」です。scaling laws は大規模化に伴う性能則、semantic bandwidth は意味情報をどれだけ高密度に表現・伝達できるかという観点として読めます。

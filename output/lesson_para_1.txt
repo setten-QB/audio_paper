@@ -1,52 +1,21 @@
-第1パラグラフを見ていきましょう。
+第1パラグラフです。
 
-Behavioural change is often essential for tackling big problems like climate change, but even when the needed actions are clear, people and policymakers often resist them.
+CALM proposes a fairly radical change to autoregressive language modeling: instead of predicting the next discrete token, it predicts the next continuous vector, where each vector encodes a chunk of K tokens.
 ---
-まず文全体の意味です。  
-「行動の変化は、気候変動のような大きな問題に取り組むためにしばしば不可欠ですが、必要な行動が明らかである場合でさえ、人々や政策立案者たちはそれに抵抗することがよくあります。」
+日本語訳: CALMは自己回帰型言語モデリングに対してかなり大胆な変更を提案している。つまり、次の離散トークンを予測する代わりに、次の連続ベクトルを予測し、その各ベクトルがK個のトークンからなるまとまりを表現する。
+補足: 「autoregressive language modeling」は自己回帰型言語モデル、「discrete token」と「continuous vector」の対比が重要です。「chunk of K tokens」は、Kトークン単位で情報をまとめて扱うことを示します。
 
-では、重要な単語や表現を見ていきます。  
-Behavioural という単語は、「行動の」「行動に関する」という意味です。発音は「ビヘイヴィアラル」に近いです。イギリス英語つづりなので behavioural ですが、アメリカ英語では behavioral とつづることもあります。  
-change はここでは「変化」という意味です。behavioural change で「行動変容」「行動の変化」というまとまりで覚えるといいです。  
-essential という単語は、「不可欠な」「絶対に必要な」という意味です。発音は「イッセンシャル」に近いです。important よりも強く、「ないと困る」という感じがあります。  
-for tackling という部分の tackle は、「取り組む」「対処する」という意味です。スポーツの「タックル」でも聞いたことがあるかもしれませんが、英語では問題に立ち向かうイメージでも使います。発音は「タクル」に近いです。  
-big problems は「大きな問題」です。  
-like climate change の like はここでは「〜のような」という意味です。  
-climate change は「気候変動」です。climate は「気候」、change は「変化」です。発音は「クライメット・チェンジ」に近いです。  
-but は「しかし」です。  
-even when は「たとえ〜であっても」「〜の場合でさえ」という意味です。ここは譲歩を表す大事な表現です。  
-the needed actions の needed は「必要とされる」という意味です。actions は「行動」「対策」です。the needed actions で「必要な行動、必要とされる対策」という意味になります。  
-are clear は「明らかである」という意味です。  
-policymakers という単語は、「政策立案者たち」という意味です。少し難しい語ですね。policy が「政策」、maker が「作る人」なので、「政策を作る人たち」と考えるとわかりやすいです。発音は「ポリシーメイカーズ」に近いです。  
-resist という単語は、「抵抗する」「受け入れようとしない」という意味です。発音は「リズィスト」に近いです。  
-them はここでは、前に出てきた needed actions、つまり「必要な行動や対策」を指しています。
-
-文法ポイントも確認します。  
-まず、Behavioural change is often essential for tackling ... で、「be essential for 〜ing」という形が使われています。これは「〜するために不可欠だ」という形です。とてもよく出ます。  
-次に、even when the needed actions are clear の部分は、「たとえ必要な行動が明らかでも」という意味の譲歩の表現です。  
-最後の people and policymakers often resist them の them は代名詞で、何を指すかを前から考えることが大切です。この文では「必要な行動」を指しています。
-
-
-This research looks at why change spreads slowly and asks whether we can measure, for each person, how much social reinforcement they need before they adopt a new behaviour.
+The motivation is simple but important.
 ---
-まず文全体の意味です。  
-「この研究は、なぜ変化がゆっくり広がるのかを考察し、さらに、一人ひとりについて、新しい行動を採用する前にどれほどの社会的な後押しが必要なのかを測定できるかどうかを問いかけています。」
+日本語訳: その動機は単純だが重要である。
+補足: 論文でよくある、提案の背景を簡潔に強調する表現です。
 
-では、重要な単語や表現を見ていきます。  
-This research は「この研究」という意味です。research は「研究」です。発音は「リサーチ」に近いです。  
-looks at という表現は、「〜を見る」ではなく、ここでは「〜を調べる」「〜を考察する」という意味です。とてもよく使う表現です。  
-why change spreads slowly の spread は、「広がる」という意味です。ここでは spreads となっていて、主語が change なので三単現の s がついています。slowly は「ゆっくりと」です。  
-asks whether の部分は、「〜かどうかを問う」という意味です。whether は「〜かどうか」という意味で、if と似ていますが、少しフォーマルな英文でよく使われます。発音は「ウェザー」に近いです。天気の weather と発音が同じなので注意してください。意味はまったく別です。  
-measure という単語は、「測定する」「数値化する」という意味です。発音は「メジャー」に近いです。  
-for each person は「一人ひとりについて」という意味です。  
-how much social reinforcement they need の social reinforcement は少し専門的です。social は「社会の」「社会的な」という意味です。reinforcement という単語は、「強化」「後押し」「支え」という意味です。発音は「リーインフォースメント」に近いです。ここでの social reinforcement は、「周りの人からの支持や影響、後押し」のような意味で理解するといいです。たとえば、友達がみんな同じ行動をしているから自分もやってみようと思う、そういう社会的な影響です。  
-before they adopt a new behaviour の adopt は、「採用する」「取り入れる」という意味です。発音は「アダプト」に近いです。ペットを「養子として迎える」という意味でも使いますが、ここでは「新しい行動を取り入れる」という意味です。  
-a new behaviour は「新しい行動」です。
+Token-by-token generation is a hard sequential bottleneck, and scaling model size alone doesn’t fix it.
+---
+日本語訳: トークンを1つずつ生成する方式は深刻な逐次的ボトルネックであり、モデルサイズを大きくするだけではそれは解決しない。
+補足: 「sequential bottleneck」は逐次処理が性能上の制約になることを指します。「scaling model size alone」は、単なる大規模化だけでは不十分だという主張です。
 
-文法ポイントです。  
-まず、looks at why change spreads slowly の部分では、why 以下が「なぜ変化がゆっくり広がるのか」という名詞節になっていて、looks at の目的語になっています。  
-次に、asks whether we can measure ... も同じように、whether 以下が「私たちは測定できるかどうか」という名詞節になっています。  
-for each person は途中に挿入されていて、「一人ひとりについて」という条件を補っています。音読するときは、ここを少し区切って読むとわかりやすいです。  
-how much social reinforcement they need は、「どれほどの社会的後押しを彼らが必要とするのか」という語順です。英語では how much が前に出てきます。  
-before they adopt a new behaviour は、「新しい行動を採用する前に」という意味の時を表す節です。  
-全体としては、research が looks at と asks という2つの動詞につながっていて、「この研究は〜を調べ、そして〜を問う」という並列の形になっています。
+Their claim is that we need another scaling axis: increase the semantic bandwidth per autoregressive step.
+---
+日本語訳: 彼らの主張は、別のスケーリング軸が必要だということであり、それは自己回帰の各ステップあたりの意味的帯域幅を増やすことである。
+補足: 「scaling axis」は性能向上のための別の拡張方向を意味します。「semantic bandwidth per autoregressive step」は、1ステップで運べる意味情報量を増やす、というこの手法の核心です。

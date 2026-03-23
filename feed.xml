@@ -118,5 +118,101 @@
       <pubDate>Mon, 23 Mar 2026 03:06:39 +0000</pubDate>
       <itunes:episode>13</itunes:episode>
     </item>
+    <item>
+      <title>[output] English Summary</title>
+      <description>英語要約の音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/output/summary_en.mp3" length="3021357" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/output/summary_en.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:21:00 +0000</pubDate>
+      <itunes:episode>14</itunes:episode>
+    </item>
+    <item>
+      <title>[output] 日本語要約</title>
+      <description>日本語要約の音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/output/summary_ja.mp3" length="2661165" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/output/summary_ja.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:21:00 +0000</pubDate>
+      <itunes:episode>15</itunes:episode>
+    </item>
+    <item>
+      <title>[output] 英語解説 パラグラフ 1</title>
+      <description>パラグラフ1の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_1.mp3" length="1126869" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_1.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:21:00 +0000</pubDate>
+      <itunes:episode>16</itunes:episode>
+    </item>
+    <item>
+      <title>[output] 英語解説 パラグラフ 2</title>
+      <description>パラグラフ2の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_2.mp3" length="1307421" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_2.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:21:00 +0000</pubDate>
+      <itunes:episode>17</itunes:episode>
+    </item>
+    <item>
+      <title>[output] 英語解説 パラグラフ 3</title>
+      <description>パラグラフ3の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_3.mp3" length="875349" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_3.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:21:00 +0000</pubDate>
+      <itunes:episode>18</itunes:episode>
+    </item>
+    <item>
+      <title>[output] 英語解説 パラグラフ 4</title>
+      <description>パラグラフ4の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_4.mp3" length="1001277" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_4.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:21:00 +0000</pubDate>
+      <itunes:episode>19</itunes:episode>
+    </item>
+    <item>
+      <title>[output] 英語解説 パラグラフ 5</title>
+      <description>パラグラフ5の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_5.mp3" length="1576245" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_5.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:21:00 +0000</pubDate>
+      <itunes:episode>20</itunes:episode>
+    </item>
+    <item>
+      <title>[output] 英語解説 パラグラフ 6</title>
+      <description>パラグラフ6の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_6.mp3" length="1326645" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_6.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:21:00 +0000</pubDate>
+      <itunes:episode>21</itunes:episode>
+    </item>
+    <item>
+      <title>[output] 英語解説 パラグラフ 7</title>
+      <description>パラグラフ7の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_7.mp3" length="1202997" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_7.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:21:00 +0000</pubDate>
+      <itunes:episode>22</itunes:episode>
+    </item>
+    <item>
+      <title>[output] 英語解説 パラグラフ 8</title>
+      <description>パラグラフ8の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_8.mp3" length="1656453" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_8.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:21:00 +0000</pubDate>
+      <itunes:episode>23</itunes:episode>
+    </item>
+    <item>
+      <title>[output] 英語解説 パラグラフ 9</title>
+      <description>パラグラフ9の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_9.mp3" length="1127109" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_9.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:21:00 +0000</pubDate>
+      <itunes:episode>24</itunes:episode>
+    </item>
+    <item>
+      <title>[output] 英語解説 パラグラフ 10</title>
+      <description>パラグラフ10の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_10.mp3" length="1429461" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/output/lesson_para_10.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:21:00 +0000</pubDate>
+      <itunes:episode>25</itunes:episode>
+    </item>
   </channel>
 </rss>
