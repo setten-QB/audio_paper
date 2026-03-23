@@ -189,34 +189,38 @@ def get_mp3_size(file_path: str) -> int:
 def update_feed(output_dir: Path, episode_title: str, audio_files: list[dict], config: dict) -> None:
     """Podcast RSSフィード (feed.xml) を生成・更新する。
 
+    Apple Podcast の要件を満たすRSS 2.0 + iTunes namespace のフィードを生成する。
     audio_files: [{"path": "episodes/xxx/summary_en.mp3", "title": "...", "description": "..."}, ...]
     """
     base_url = config.get("github_pages_base_url", "").rstrip("/")
     feed_path = Path(__file__).parent / "feed.xml"
-
     itunes_ns = "http://www.itunes.com/dtds/podcast-1.0.dtd"
-    nsmap = {"itunes": itunes_ns}
+    ET.register_namespace("itunes", itunes_ns)
 
     # 既存フィードがあれば読み込み、なければ新規作成
     if feed_path.exists():
-        ET.register_namespace("itunes", itunes_ns)
         tree = ET.parse(feed_path)
         rss = tree.getroot()
         channel = rss.find("channel")
     else:
-        ET.register_namespace("itunes", itunes_ns)
-        rss = ET.Element("rss", attrib={
-            "version": "2.0",
-            "xmlns:itunes": itunes_ns,
-        })
+        rss = ET.Element("rss", attrib={"version": "2.0"})
+        # xmlns:itunes は register_namespace で自動付与される
         channel = ET.SubElement(rss, "channel")
         ET.SubElement(channel, "title").text = config.get("podcast_title", "Audio Paper Summary")
         ET.SubElement(channel, "link").text = base_url
         ET.SubElement(channel, "description").text = config.get("podcast_description", "")
         ET.SubElement(channel, "language").text = config.get("podcast_language", "en")
+        # Apple Podcast 必須タグ
+        ET.SubElement(channel, f"{{{itunes_ns}}}type").text = "episodic"
         ET.SubElement(channel, f"{{{itunes_ns}}}author").text = config.get("podcast_author", "")
         ET.SubElement(channel, f"{{{itunes_ns}}}explicit").text = "false"
         ET.SubElement(channel, f"{{{itunes_ns}}}category", attrib={"text": "Education"})
+        ET.SubElement(channel, f"{{{itunes_ns}}}image", attrib={
+            "href": f"{base_url}/cover.jpg",
+        })
+        owner = ET.SubElement(channel, f"{{{itunes_ns}}}owner")
+        ET.SubElement(owner, f"{{{itunes_ns}}}name").text = config.get("podcast_author", "")
+        ET.SubElement(owner, f"{{{itunes_ns}}}email").text = config.get("podcast_email", "noreply@example.com")
         tree = ET.ElementTree(rss)
 
     now = datetime.now(timezone.utc)
