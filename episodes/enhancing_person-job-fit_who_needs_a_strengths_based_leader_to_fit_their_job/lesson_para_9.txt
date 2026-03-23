@@ -1,0 +1,61 @@
+第9パラグラフを見ていきましょう。
+
+The practical message is that organizations shouldn’t assume person-job fit is only the employee’s responsibility.
+---
+まず文全体の意味です。  
+「実際的なメッセージは、組織は、人と仕事の適合が従業員だけの責任だと思い込むべきではない、ということです。」
+
+では、単語や表現を見ていきます。  
+practical という単語は、「実際的な」「現実に役立つ」という意味です。発音は「プラクティカル」に近いです。  
+message という単語は、「メッセージ」「伝えたいこと」という意味です。ここでは、ただの伝言ではなく、「この内容から得られる教訓」のような意味で使われています。  
+organization という単語は、「組織」や「会社」という意味です。発音は「オーガニゼイション」に近いです。  
+shouldn’t assume の assume は、「当然だと思う」「決めつける」「思い込む」という意味です。shouldn’t assume で、「思い込むべきではない」となります。  
+person-job fit という表現は、「人と仕事の適合」「その人がその仕事にどれだけ合っているか」という意味です。fit はここでは「健康」という意味ではなく、「相性が合うこと」「適していること」です。  
+only the employee’s responsibility の responsibility は、「責任」です。employee は「従業員」です。つまり、「従業員だけの責任」という意味になります。
+
+文法のポイントです。  
+The practical message is that ... という形は、「実際に伝えたいことは〜だ」という表現です。that 以下が message の具体的な内容になっています。  
+また、person-job fit is only the employee’s responsibility の部分は、「人と仕事の適合は従業員だけの責任だ」という内容で、これを organizations shouldn’t assume が包んでいます。
+
+
+Managers can play a real role by helping people work from their strengths.
+---
+文全体の意味です。  
+「管理職は、人々が自分の強みを生かして働けるように助けることで、本当に重要な役割を果たすことができます。」
+
+単語と表現を確認しましょう。  
+manager という単語は、「管理職」「上司」という意味です。発音は「マネジャー」に近いです。  
+play a role という表現は、「役割を果たす」という意味です。とてもよく使う表現です。  
+a real role は、「本当の役割」「実質的な役割」ということです。ここでは、「ちゃんと意味のある役割を持てる」というニュアンスです。  
+by helping の by は、「〜することによって」という意味です。方法を表しています。  
+work from their strengths という表現は少し大事です。strength という単語は、「強み」「得意なこと」という意味です。発音は少し難しくて、「ストレングス」に近いです。最後の ths の音が続くので、ゆっくり練習するといいです。  
+work from their strengths は、「自分の強みを土台にして働く」「自分の得意なことを生かして働く」という意味です。
+
+文法ポイントです。  
+can play a real role で、「重要な役割を果たすことができる」です。  
+by helping people work from their strengths の by は手段を表していて、「人々が強みを生かして働けるように助けることによって」という意味になります。  
+help 人 動詞の形も大事です。helping people work のところで、「人々が働くのを助ける」となっています。
+
+
+Training leaders in strengths spotting, strengths-based coaching, and strengths-focused performance conversations could improve both employee experience and job fit over time.
+---
+文全体の意味です。  
+「リーダーに対して、強みを見つけること、強みに基づくコーチング、そして強みに注目した業績面談について訓練することは、時間をかけて、従業員の経験と仕事との適合の両方を改善する可能性があります。」
+
+では、単語や表現を見ていきます。  
+training leaders の training はここでは動詞的に使われていて、「リーダーを訓練すること」という意味です。leader は「リーダー」「指導する立場の人」です。  
+strengths spotting という表現は、「強みを見つけること」です。spot という単語は、「見つける」「気づく」という意味があります。spotting で、「見抜くこと」「見つけ出すこと」です。  
+strengths-based coaching の based は、「〜に基づいた」という意味です。strengths-based coaching で、「強みに基づくコーチング」です。coaching は、「相手の力を引き出すための指導や支援」のことです。  
+strengths-focused performance conversations も長いですが、かたまりで見ましょう。focused は、「焦点を当てた」という意味です。performance はここでは、「成績」ではなく、仕事での成果や働きぶりのことです。conversation は「会話」です。つまり全体で、「強みに焦点を当てた業績面談」や「強みを中心にした仕事の話し合い」という意味になります。  
+could improve の could は、「〜できる」より少し控えめで、「〜する可能性がある」というニュアンスです。improve は「改善する」です。  
+both A and B は、「AとBの両方」です。  
+employee experience は、「従業員としての体験」「職場での従業員の経験」という意味です。働きやすさや満足感まで含む広い表現です。  
+job fit はさっきも出てきましたが、「仕事との適合」です。  
+over time は、「時間をかけて」「徐々に」という意味です。
+
+文法ポイントです。  
+この文の主語はかなり長いですが、Training leaders in ... conversations まで全部が主語です。つまり、「リーダーを〜について訓練すること」が主語になっています。  
+動詞は could improve です。「改善する可能性がある」となります。  
+また、both employee experience and job fit で、「従業員の経験と仕事との適合の両方」を表しています。
+
+以上が第9パラグラフの解説です。

@@ -1,0 +1,111 @@
+第6パラグラフを見ていきましょう。
+
+For demands-abilities fit, the effect of strengths-based leadership worked entirely through strengths use.
+---
+まず文全体の日本語訳です。  
+「要求と能力の適合については、強み重視のリーダーシップの効果は、完全に強みの活用を通して生じていました。」
+
+単語を見ていきます。  
+demands-abilities fit という表現は、「仕事で求められること」と「その人の能力」との合致、つまり「要求と能力の適合」という意味です。fit はここでは「ぴったり合うこと」という意味で使われています。発音は「フィット」に近いです。
+
+effect という単語は、「効果」という意味です。よく似た単語で affect がありますが、effect は名詞で「効果」、affect は動詞で「影響を与える」になることが多いので、区別しておきましょう。
+
+strengths-based leadership という表現は、「強みに基づくリーダーシップ」、または「強み重視のリーダーシップ」という意味です。strengths は strength の複数形で、「強み」という意味です。based は「〜に基づいた」という意味で、strengths-based でひとかたまりと考えると分かりやすいです。発音は strength が少し言いにくいですが、「ストレングス」に近い感じです。
+
+worked entirely through という部分は、「完全に〜を通して機能した」「もっぱら〜によって効果を発揮した」という意味です。entirely は「完全に」という意味です。through はここでは「〜を通して」です。
+
+strengths use は、「強みの活用」という意味です。use は「使うこと」ですから、strengths use で「自分の強みを実際に使うこと」です。
+
+文法ポイントです。  
+For demands-abilities fit という最初の部分は、「要求と能力の適合に関して言えば」という話題の提示になっています。worked entirely through strengths use の through は前置詞で、「どの手段を通じて効果が出たのか」を表しています。英文全体としては、かなり学術的な説明文の形ですね。
+
+In other words, leaders improved this kind of fit mainly by helping employees actually use their strengths.
+---
+まず文全体の日本語訳です。  
+「言い換えると、リーダーたちは、従業員が実際に自分の強みを使えるように手助けすることで、主にこの種の適合を高めていたのです。」
+
+単語を見ていきます。  
+In other words は、「言い換えると」という意味のとても重要な表現です。説明を言い直したいときによく使います。音読では in other words をひとかたまりで覚えるといいです。
+
+leaders という単語は、「リーダーたち」という意味です。
+
+improved は improve の過去形で、「改善した」「向上させた」という意味です。発音は「インプルーヴド」に近いです。
+
+this kind of fit は、「この種類の適合」という意味です。kind of はここでは「〜の一種」という意味です。
+
+mainly は、「主に」という意味です。
+
+by helping employees actually use their strengths の部分が大事です。employee という単語は、「従業員」という意味です。発音は「エンプロイー」に近いです。actually は、「実際に」という意味です。
+
+help A do という形にも注目しましょう。これは「Aが〜するのを手伝う」という意味です。この文では helping employees actually use their strengths で、「従業員が実際に自分の強みを使うのを手助けすること」となっています。
+
+文法ポイントです。  
+by helping ... は、「〜することによって」という手段を表しています。by のあとに動詞の ing 形が来ると、「〜することで」という意味になりやすいです。ここでは、リーダーがどうやって適合を高めたのか、その方法を説明しています。
+
+For needs-supplies fit, the pattern was slightly different.
+---
+まず文全体の日本語訳です。  
+「一方、ニーズと供給の適合については、そのパターンは少し異なっていました。」
+
+単語を見ていきます。  
+needs-supplies fit は、「ニーズと供給の適合」という意味です。少しかたい言い方ですが、職場や環境がその人の必要としているものをどれだけ満たしているか、ということです。needs は「必要としているもの」、supplies はここでは「提供されるもの」です。
+
+pattern という単語は、「パターン」「傾向」「型」という意味です。この文では、「結果の出方のパターン」というイメージです。
+
+slightly は、「少し」「わずかに」という意味です。発音は「スライトリー」に近いです。
+
+different は、「異なる」という意味です。
+
+文法ポイントです。  
+For needs-supplies fit も、最初の文と同じで、「〜に関して言えば」という話題提示です。the pattern was slightly different は、be動詞を使ったシンプルな文で、「その傾向は少し違っていた」と述べています。前の内容との比較が意識されている文ですね。
+
+Strengths use explained part of the effect, but strengths-based leadership also had a direct positive effect.
+---
+まず文全体の日本語訳です。  
+「強みの活用はその効果の一部を説明していましたが、強み重視のリーダーシップ自体にも、直接的でプラスの効果がありました。」
+
+単語を見ていきます。  
+explained という単語は、「説明した」という意味ですが、このような研究の文脈では「結果の一部の原因として説明できた」という意味で使われます。つまり、「その効果は一部、強みの活用によって説明できる」ということです。
+
+part of the effect は、「その効果の一部」という意味です。
+
+but は、「しかし」です。ここでは前半と後半を対比しています。
+
+also は、「〜もまた」という意味です。
+
+had a direct positive effect の部分が大切です。direct という単語は、「直接の」という意味です。positive は、「肯定的な」「良い」「プラスの」という意味です。effect は先ほどと同じく「効果」です。合わせて、「直接的なプラスの効果」という意味になります。
+
+文法ポイントです。  
+この文は、but を使って二つの内容を対比しています。前半では strengths use explained part of the effect と言っていて、「強みの活用が効果の一部を説明した」。後半では strengths-based leadership also had a direct positive effect と言っていて、「それとは別に、リーダーシップ自体にも直接の効果があった」と述べています。つまり、強みの活用だけですべて説明できるわけではない、ということですね。
+
+That suggests leaders may improve this kind of fit not only by encouraging strengths use, but also by making employees feel recognized, supported, and valued.
+---
+まず文全体の日本語訳です。  
+「そのことは、リーダーたちがこの種の適合を高めるのは、強みの活用を促すことによってだけでなく、従業員が認められ、支えられ、大切にされていると感じられるようにすることによってでもある、ということを示しています。」
+
+単語を見ていきます。  
+That suggests の suggest は、「示唆する」「それとなく示す」という意味です。ここでは、「そのことから〜が考えられる」という感じです。発音は「サジェスト」に近いです。
+
+may は、「〜かもしれない」だけでなく、この文では「〜しうる」「〜する可能性がある」という控えめな表現です。
+
+improve this kind of fit は、「この種の適合を高める」という意味です。
+
+not only A but also B は、とても重要な表現です。「AだけでなくBも」という意味です。この文では、not only by encouraging strengths use, but also by making employees feel ... となっていて、「強みの活用を促すことによってだけでなく、〜と感じさせることによっても」となっています。
+
+encouraging という単語は、「促す」「励ます」という意味です。encourage はよく出る単語です。
+
+recognized という単語は、「認められた」という意味です。recognize は「認識する」だけでなく、「評価して認める」という意味もあります。発音は「レコグナイズ」に近いです。
+
+supported は、「支えられた」という意味です。support は「支える」「支援する」です。
+
+valued は、「大切にされる」「価値あるものとして扱われる」という意味です。value は「価値を置く」という意味があります。
+
+make employees feel ... の部分も大事です。make A feel B で、「AにBだと感じさせる」という意味です。この文では、「従業員に、認められ、支えられ、大切にされていると感じさせる」となっています。
+
+文法ポイントです。  
+まず、That suggests の That は、前の文までの内容全体を受けています。  
+次に、not only A but also B の形が使われています。AとBの形をそろえるのがポイントで、この文では両方とも by で始まっています。つまり、  
+not only by encouraging strengths use  
+but also by making employees feel ...  
+という並列になっています。とてもきれいな形ですね。  
+さらに、recognized, supported, and valued は、employees を説明するというより、feel の内容として「認められ、支えられ、大切にされている」と並べて述べています。音読するときは、この3つをリズムよく読むと意味がつかみやすいです。

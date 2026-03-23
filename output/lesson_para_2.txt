@@ -1,0 +1,70 @@
+第2パラグラフを見ていきましょう。
+
+The key idea comes from complex contagion theory.
+---
+日本語訳は、「その中心となる考え方は、複雑な感染理論から来ています。」です。
+
+まず、key idea という表現は、「重要な考え」「中心的なアイデア」という意味です。key は「鍵」という意味でよく知られていますが、ここでは「最も重要な」という意味で使われています。
+
+comes from は、「～に由来する」「～から来ている」という意味です。come from を読むときは、comes の z のような音と、from をなめらかにつなげて読むのがコツです。
+
+complex contagion theory という語句は大事です。complex という単語は、「複雑な」という意味です。発音は「コンプレックス」ではなく、英語では「カンプれクス」に近いです。contagion という単語は、「感染」「広がること」という意味です。少し難しい単語ですが、病気の感染だけでなく、考えや行動が人から人へ広がることにも使えます。theory は「理論」という意味です。
+
+文法としては、とてもシンプルな文です。主語は The key idea、動詞は comes です。from 以下が「どこから来るのか」を説明しています。
+
+
+Unlike a simple contagion, where one exposure might be enough, complex contagion assumes that people often need support or confirmation from several others before they change.
+---
+日本語訳は、「一度の接触で十分かもしれない単純な感染とは違って、複雑な感染では、人は変化する前に、しばしば何人かの他者からの支えや確認を必要とすると考えます。」です。
+
+Unlike という単語は、「～とは違って」という意味です。文の最初で使うことで、これから対比をするんだな、ということが分かります。発音は「アンライク」に近いです。
+
+a simple contagion は、「単純な感染」です。simple は「単純な、簡単な」という意味ですね。
+
+where one exposure might be enough の部分は、「一回の接触で十分かもしれないような」という説明です。exposure という単語は、「接触」「さらされること」という意味です。この文では、ある考えや情報に一度触れることを指しています。発音は「イクスポージャー」に近いです。might be enough は、「十分かもしれない」という控えめな言い方です。
+
+complex contagion assumes that ... の assumes は、「～だと想定する」「～だと考える」という意味です。assume は「思い込む」ではなく、学術的な文では「仮定する」「前提とする」と訳すことが多いです。
+
+people often need support or confirmation の部分は、「人々はしばしば支えや確認を必要とする」という意味です。support は「支援、後押し」という意味です。confirmation は少し難しくて、「確認」「裏づけ」という意味です。ここでは、「自分の考えや行動が正しいと他の人が示してくれること」というイメージです。
+
+from several others は、「何人かの他の人たちから」という意味です。several は「いくつかの、数人の」です。others は「他の人たち」です。
+
+before they change は、「彼らが変化する前に」という意味です。change はここでは「考えや行動を変えること」です。
+
+文法ポイントとしては、Unlike A, B で「Aとは違って、Bは～だ」という対比の形になっています。また、assumes that の that 以下が、assumes の内容になっています。さらに、before they change が、「いつ必要なのか」を説明しています。
+
+
+That point is called an adoption threshold.
+---
+日本語訳は、「その点は、採用のしきい値と呼ばれます。」です。
+
+That point は、「その点」「その考え方」を指しています。前の文の内容を受けています。
+
+is called は、「～と呼ばれる」という意味です。これは受け身の形ですね。call A B で「AをBと呼ぶ」ですが、受け身になると A is called B で「AはBと呼ばれる」になります。
+
+adoption threshold は特に重要な専門用語です。adoption という単語は、「採用」「受け入れ」という意味です。ここでは、新しい行動や考え方を人が取り入れることを表しています。threshold は、「敷居」「境目」「しきい値」という意味です。日常会話ではあまり使わないかもしれませんが、ある変化が起こるための最低ライン、というイメージで覚えるといいです。つまり adoption threshold は、「人が新しい行動を取り入れるために必要な最低限の後押しの量」のような意味です。
+
+文法的には、S is called C という第2文型の受け身の形です。シンプルですが、とてもよく出る表現です。
+
+
+The challenge is that these thresholds have been important in theory for years, but they have been very hard to measure in practice.
+---
+日本語訳は、「問題は、こうしたしきい値が長年にわたって理論の上では重要であった一方で、実際にはそれを測定するのがとても難しかったということです。」です。
+
+The challenge is that ... は、「難しい点は～だ」「課題は～だ」という意味です。challenge は「挑戦」という意味でよく知られていますが、ここでは「課題」「難点」という意味です。
+
+these thresholds は、「これらのしきい値」です。thresholds は threshold の複数形です。ここでは、人によって必要な後押しのレベルが違うので、複数形になっていると考えると分かりやすいです。
+
+have been important は、「重要であり続けてきた」という意味です。現在完了の have been が使われています。過去から今までずっと重要だった、というニュアンスです。
+
+in theory は、「理論上は」という意味です。theory は先ほどと同じく「理論」です。
+
+for years は、「何年もの間」「長年」という意味です。長い期間を表しています。
+
+but は、「しかし」です。ここで前半と後半を対比しています。
+
+they have been very hard to measure の部分は、「それらを測定するのがとても難しかった」という意味です。hard to measure は、「測るのが難しい」です。measure という単語は、「測定する」という意味です。発音は「メジャー」に近いです。
+
+in practice は、「実際には」「実務上は」という意味です。in theory と in practice はセットで覚えておくと便利です。「理論上は～、でも実際には～」という対比をよく表します。
+
+文法ポイントとしては、The challenge is that ... で、that 以下全体が challenge の内容になっています。また、have been important と have been hard の現在完了が使われていて、どちらも過去から今につながる状態を表しています。さらに、in theory と in practice の対比がこの文の大事なポイントです。

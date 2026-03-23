@@ -1,0 +1,50 @@
+第3パラグラフを見ていきましょう。
+
+The researchers also explored whether leadership is less necessary for some workers.
+---
+まず文全体の意味です。  
+「研究者たちはまた、リーダーシップが一部の労働者にとってはそれほど必要ではないのかどうかを調べました。」という意味です。
+
+では、重要な単語を見ていきましょう。  
+researchers という単語は、「研究者たち」という意味です。発音は「リサーチャーズ」に近いです。最初の re は弱く読まれやすいです。  
+also という単語は、「また、さらに」という意味です。文の中で「追加の内容」を表しています。  
+explored という単語は、「調べた、探った、検討した」という意味です。ここでは「研究として詳しく調べた」という感じです。発音は「イクスプロード」ではなく、「イクスプロード」に近いですが、最後は d の音を軽く添えます。  
+whether という単語は、「〜かどうか」という意味です。発音は「ウェザー」に近いですが、天気の weather とつづりが違うので注意しましょう。  
+leadership という単語は、「リーダーシップ、指導力」という意味です。lead はここでは「導く」という意味です。  
+less necessary で、「それほど必要ではない、あまり必要ではない」という意味です。necessary は「必要な」という意味で、発音は「ネセサリー」に近いです。  
+for some workers は、「一部の労働者にとって」という意味です。worker は「働く人、労働者」です。
+
+文法ポイントです。  
+この文では whether が「〜かどうか」を導く接続詞として使われています。explored whether ... で、「…かどうかを調べた」という形です。  
+また、is less necessary は直訳すると「より必要でない」ですが、自然な日本語では「それほど必要ではない」と訳すと分かりやすいです。
+
+They predicted that employees with a proactive personality, especially when they also have high job autonomy, might be able to create fit on their own even without much strengths-based leadership.
+---
+まず文全体の意味です。  
+「彼らは、積極的な性格を持つ従業員は、特に仕事の自律性も高い場合には、強みを重視したリーダーシップがあまりなくても、自分自身で適合を生み出せるかもしれないと予測しました。」という意味です。
+
+では、重要な単語や表現を見ていきましょう。  
+predicted という単語は、「予測した」とか「予想した」という意味です。発音は「プリディクティッド」に近いです。  
+employees という単語は、「従業員たち」という意味です。employee は employer「雇う側」と混同しやすいので注意してください。employee が「雇われる側」です。  
+with a proactive personality で、「積極的な性格を持つ」という意味です。  
+proactive という単語は少し難しいですが、「先回りして行動する、積極的な、自発的な」という意味です。reactive「言われてから反応する」と反対のイメージです。発音は「プローアクティブ」に近いです。  
+especially という単語は、「特に」という意味です。  
+job autonomy という表現は、「仕事の自律性」という意味です。これは専門的な表現です。autonomy という単語は、「自分で決めて動けること、自主性、自律性」という意味です。つまり job autonomy は、「仕事のやり方や進め方を自分である程度決められること」です。発音は「オートナミー」に近いです。  
+might be able to は、「〜できるかもしれない」という意味です。might が入ることで、「たぶん〜かもしれない」という少し控えめな言い方になります。  
+create fit という表現は、この文章ではとても大事です。「適合を生み出す」という意味です。fit はここでは「ぴったり合うこと、相性のよさ、適合」です。仕事とその人の強みや性格が合っている状態を表しています。  
+on their own という表現は、「自分たち自身で、自力で」という意味です。よく出る熟語なので覚えておきましょう。  
+even without ... は、「…がなくても」という意味です。even が入ることで、「〜がなくてもなお」と強調しています。  
+much strengths-based leadership は、「多くの強み重視のリーダーシップ」という意味です。  
+strengths-based という表現は、これも専門的です。「強みに基づいた、強みを重視した」という意味です。strength は「強み」、based は「〜に基づく」です。  
+leadership はここでも「リーダーシップ、指導」です。
+
+文法ポイントです。  
+まず、They predicted that ... で、「彼らは…だと予測した」という基本の形です。that の後ろに予測した内容が続いています。  
+employees with a proactive personality の部分では、with a proactive personality が employees を後ろから説明しています。「積極的な性格を持つ従業員たち」というまとまりです。  
+especially when they also have high job autonomy は途中に入った補足です。「特に、彼らが高い仕事の自律性も持っているときには」という意味です。  
+might be able to create fit は、「適合を生み出すことができるかもしれない」です。  
+even without much strengths-based leadership は、「たくさんの強み重視のリーダーシップがなくても」という条件を付け加えています。
+
+全体としては、  
+「もともと積極的に動ける人は、しかも仕事を自分で進めやすい環境にあるなら、上司から特別に強みを引き出してもらわなくても、自分で仕事との相性をうまく作れるかもしれない」  
+という内容を述べている文です。

@@ -1,0 +1,21 @@
+Person-job fit means how well a person matches their job in two ways: whether their abilities meet the job’s demands, called demands-abilities fit, and whether the job provides what they need, called needs-supplies fit. This study asks an important question: who needs a strengths-based leader in order to feel that fit?
+
+The authors argue that most past research has focused too much on employees adjusting themselves to fit their jobs. Instead, they propose that leaders can actively improve fit by helping people identify, use, and develop their strengths at work. A strengths-based leader, in this view, doesn’t just fix weaknesses. They notice what employees naturally do well, give feedback on those strengths, and shape tasks and roles to match them.
+
+The researchers also explored whether leadership is less necessary for some workers. They predicted that employees with a proactive personality, especially when they also have high job autonomy, might be able to create fit on their own even without much strengths-based leadership.
+
+To test this, they collected data from a representative sample of Dutch workers employed in medium and large organizations. There were three survey waves, each two months apart, with 308 employees contributing a total of 906 observations. They measured strengths-based leadership, strengths use, demands-abilities fit, needs-supplies fit, proactive personality, and job autonomy, and analyzed the results with multilevel path modeling to capture changes within the same person over time.
+
+The findings were clear. When employees perceived more strengths-based leadership than usual, they also reported using their strengths more. And when they used their strengths more, they felt a better fit with their job.
+
+For demands-abilities fit, the effect of strengths-based leadership worked entirely through strengths use. In other words, leaders improved this kind of fit mainly by helping employees actually use their strengths. For needs-supplies fit, the pattern was slightly different. Strengths use explained part of the effect, but strengths-based leadership also had a direct positive effect. That suggests leaders may improve this kind of fit not only by encouraging strengths use, but also by making employees feel recognized, supported, and valued.
+
+The study also found an important boundary condition. The combination of high proactive personality and high job autonomy partly compensated for a lack of strengths-based leadership. Employees who were both proactive and free to shape their work relied less on their leader to help them use their strengths and feel job fit. But if employees were less proactive, had less autonomy, or both, strengths-based leadership mattered much more.
+
+So the main conclusion is that strengths-based leadership helps employees fit their jobs better, especially by increasing strengths use. And this kind of leadership is particularly important for workers who do not naturally take initiative or who do not have much freedom in how they do their jobs.
+
+The practical message is that organizations shouldn’t assume person-job fit is only the employee’s responsibility. Managers can play a real role by helping people work from their strengths. Training leaders in strengths spotting, strengths-based coaching, and strengths-focused performance conversations could improve both employee experience and job fit over time.
+
+The authors do note some limitations. The study relied on self-report surveys, and although it tracked people over time, it cannot prove causality as strongly as an experiment could. They also suggest future research should test different time intervals and compare strengths-based leadership with other leadership styles.
+
+Overall, the study offers a fresh perspective: person-job fit is not just something employees have to build alone. Leaders can help create it, and that support matters most for the people who need it most.

@@ -1,0 +1,61 @@
+第4パラグラフを見ていきましょう。
+
+To test this, they collected data from a representative sample of Dutch workers employed in medium and large organizations.
+---
+日本語訳は、「これを検証するために、彼らは中規模および大規模の組織で働くオランダ人労働者の代表的なサンプルからデータを集めました。」です。
+
+まず、To test this は「これを確かめるために」「これを検証するために」という意味です。test は「テストする」という意味でよく知られていますが、ここでは研究の文脈なので、「仮説などを検証する」という意味で使われています。発音は「テスト」で大丈夫ですが、英語では t の音をはっきり出すイメージです。
+
+collected data は「データを集めた」という意味です。collect という単語は「集める」という意味です。発音は「コレクト」に近いです。data は「データ」ですね。
+
+a representative sample という表現は大事です。representative という単語は「代表的な」という意味です。つまり、一部を調べれば全体の傾向をある程度反映しているような集団、ということです。sample は「標本」「調査対象の一部」という意味です。研究ではとてもよく出てきます。発音は representative が少し長いですが、「レプリゼンタティブ」に近い感じです。sample は「サンプル」です。
+
+Dutch workers の Dutch は「オランダの」という意味です。workers は「労働者たち」「働いている人たち」です。
+
+employed in medium and large organizations の部分は workers にかかっています。employed は「雇われている」「勤務している」という意味です。medium and large organizations は「中規模および大規模の組織」です。organization は「組織」「団体」「会社」などの意味で、ここでは会社や職場を含む広い意味で使われています。発音は「オーガニゼーション」に近いです。
+
+文法ポイントとしては、employed in medium and large organizations は過去分詞を使って workers を後ろから説明しています。「中規模・大規模組織に雇われている労働者」というまとまりで理解できると読みやすいです。
+
+
+There were three survey waves, each two months apart, with 308 employees contributing a total of 906 observations.
+---
+日本語訳は、「調査は3回の波に分けて行われ、それぞれ2か月ずつ間隔があり、308人の従業員が合計906件の観測データを提供しました。」です。
+
+まず、survey waves は少し専門的な表現です。survey は「調査」です。wave はふつう「波」ですが、調査では「実施回」「調査の1回分」という意味で使われます。つまり three survey waves で「3回の調査」ということです。発音は survey が「サーヴェイ」、wave は「ウェイヴ」です。
+
+each two months apart は「それぞれ2か月間隔で」という意味です。apart は「離れて」という意味なので、時間について使うと「間隔をあけて」という意味になります。
+
+with 308 employees contributing a total of 906 observations の with は、「そして」「その結果として」くらいの軽いつながりで読めば大丈夫です。308 employees は「308人の従業員」です。contributing はここでは「提供して」「参加してデータを出して」という意味です。contribute という単語は「貢献する」という意味で覚えている人も多いと思いますが、この文では「データ提供に加わる」という感じです。
+
+a total of 906 observations は「合計906件の観測データ」という意味です。a total of は「合計～の」という定番表現です。observation は「観察」という意味が基本ですが、研究では「観測値」「1件分のデータ」という意味でも使われます。高校生には少し難しいですが、ここでは「集められたデータの件数」と考えれば大丈夫です。発音は observation が「オブザーヴェイション」に近いです。
+
+文法ポイントとしては、There were ... で「～があった」と存在を述べています。また、with 以下は付帯状況を表していて、「308人の従業員が参加し、合計906件のデータが得られた状態で」という説明を加えています。
+
+
+They measured strengths-based leadership, strengths use, demands-abilities fit, needs-supplies fit, proactive personality, and job autonomy, and analyzed the results with multilevel path modeling to capture changes within the same person over time.
+---
+日本語訳は、「彼らは、強みに基づくリーダーシップ、強みの活用、仕事の要求と能力の適合、ニーズと供給の適合、主体性の高い性格、そして仕事の自律性を測定し、同じ人物の中で時間とともに起こる変化をとらえるために、マルチレベル・パス・モデリングを用いて結果を分析しました。」です。
+
+かなり専門用語が多い文なので、順番に見ていきます。
+
+measured は「測定した」「数値化して調べた」という意味です。研究では、目に見えない性質もアンケートなどで測るので、この measured がよく使われます。
+
+strengths-based leadership は「強みに基づくリーダーシップ」という意味です。strength は「強み」、based は「～に基づく」、leadership は「指導力」「リーダーシップ」です。つまり、部下の弱点よりも強みに注目するタイプのリーダーシップです。strengths は最後の s をしっかり発音して「ストレングス」です。
+
+strengths use は「自分の強みを使うこと」です。use は「使うこと」ですから、強みを実際の仕事で活用しているかどうかを表します。
+
+demands-abilities fit は少し難しいですが、「仕事の要求と自分の能力の適合」という意味です。demands は「要求されること」、abilities は「能力」、fit は「合っていること」「適合」です。つまり、「仕事が求めているレベルと、自分の力がちゃんと合っているか」ということです。
+
+needs-supplies fit も専門用語です。「自分のニーズと職場から与えられるものの適合」という意味です。needs は「必要としているもの」、supplies はここでは「与えられる資源や支援、条件」のことです。たとえば、成長の機会や給料、サポートなどが自分の求めているものに合っているか、ということです。
+
+proactive personality は「主体的な性格」「先回りして行動するタイプの性格」です。proactive という単語はとても大事で、「言われる前に動く」「自分から進んで行動する」という意味です。reactive が「受け身の」なので、その反対です。発音は「プロウアクティブ」に近いです。
+
+job autonomy は「仕事の自律性」です。autonomy は「自分で決められること」「自主性」という意味です。つまり、仕事のやり方や進め方をどれだけ自分でコントロールできるか、ということです。発音は「オートノミー」に近いです。
+
+analyzed the results は「結果を分析した」という意味です。analyze は「分析する」です。発音は「アナライズ」です。
+
+with multilevel path modeling が特に専門的です。multilevel path modeling は「マルチレベル・パス・モデリング」という統計手法です。multilevel は「複数のレベルの」という意味で、たとえば「人と時点」のように、層になったデータを扱うイメージです。path modeling は、いくつかの要因がどうつながって影響するかを分析する方法です。ここでは、時間ごとの変化や、変数どうしの関係を詳しく見るために使っています。
+
+to capture changes within the same person over time の capture はここでは「とらえる」「明らかにする」という意味です。changes は「変化」、within the same person は「同じ人物の中で」、over time は「時間とともに」です。つまり、人と人を比べるだけではなく、同じ人が時間の経過の中でどう変わるかを見た、ということです。
+
+文法ポイントとしては、and で measured と analyzed が並んでいます。つまり、「測定した、そして分析した」という2つの動作です。また、to capture ... は不定詞で目的を表していて、「変化をとらえるために」という意味になっています。さらに、within the same person があることで、「別の人との比較ではなく、同一人物の変化」を強調しています。

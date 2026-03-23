@@ -1,0 +1,57 @@
+第10パラグラフを見ていきましょう。
+
+The authors do note some limitations.
+---
+日本語訳は、「著者たちは、たしかにいくつかの限界があることを指摘しています。」です。
+
+まず、authors という単語は、「著者たち」という意味です。論文や記事を書いた人たちのことですね。発音は「オーサーズ」に近いです。th の音は、日本語の「サ」ではなく、舌を軽く歯の間に当てて出す音を意識するといいです。
+
+do note の do は、ここでは「する」という普通の意味ではなく、強調です。つまり、「たしかに指摘している」「はっきりと述べている」というニュアンスになります。note は「注意する」ではなく、ここでは「指摘する、述べる」という意味です。発音は「ノウト」に近いです。
+
+limitations という単語は、「限界、制約、問題点」という意味です。研究の文章ではとてもよく出てきます。発音は「リミテイションズ」に近いです。
+
+文法ポイントとしては、do note の do が強調表現になっているところが大事です。普通は The authors note some limitations. でも意味は通じますが、do を入れることで「本当にちゃんと述べているんですよ」という強い言い方になります。
+
+
+The study relied on self-report surveys, and although it tracked people over time, it cannot prove causality as strongly as an experiment could.
+---
+日本語訳は、「その研究は自己申告式のアンケートに依存していて、また時間をかけて人々を追跡してはいたものの、実験ほど強く因果関係を証明することはできません。」です。
+
+まず、study という単語は、「研究」という意味です。発音は「スタディ」です。
+
+relied on という表現は、「～に頼った、～に依存した」という意味です。rely on A で「Aに頼る」という形ですね。発音は relied が「リライド」、rely は「リライ」に近いです。
+
+self-report surveys は少し専門的です。self-report という単語は、「自己申告の」という意味です。つまり、自分で自分の状態や行動を答える形式です。surveys は「調査、アンケート」です。合わせて self-report surveys で、「自己申告式のアンケート調査」という意味になります。発音は self-report が「セルフ リポート」、surveys が「サーヴェイズ」に近いです。
+
+although は、「～だけれども、～にもかかわらず」という意味です。文の途中で逆接を作っています。発音は「オールゾウ」に近いです。
+
+tracked people over time の track は、「追跡する」という意味です。ここでは GPS のような意味ではなく、「時間をかけて継続的に調べる」ということです。over time は、「時間をかけて、長期にわたって」という意味です。
+
+cannot prove の prove は、「証明する」という意味です。cannot prove で「証明できない」です。
+
+causality はとても大事な専門語です。causality という単語は、「因果関係」という意味です。つまり、「Aが原因でBが起こる」という関係ですね。似た語で cause は「原因」、effect は「結果」です。causality は研究論文でよく出る言葉です。発音は「コーザリティ」に近いです。
+
+as strongly as an experiment could の部分は、「実験ができるほど強くは」という意味です。experiment は「実験」です。自己申告アンケートによる研究より、実験のほうが因果関係をよりはっきり示しやすい、ということを言っています。
+
+文法ポイントとしては、although it tracked people over time の although 節が挿入されていて、「長期間追跡はしていたけれども」と補足しています。それでも主節は it cannot prove causality as strongly as an experiment could です。あと、as strongly as ... は「～と同じくらい強く」という比較表現です。ここでは否定文なので、「～ほど強くはない」という意味になります。
+
+
+They also suggest future research should test different time intervals and compare strengths-based leadership with other leadership styles.
+---
+日本語訳は、「彼らはまた、今後の研究では、異なる時間間隔を検証し、ストレングス・ベースド・リーダーシップを他のリーダーシップの型と比較すべきだと示唆しています。」です。
+
+まず、suggest という単語は、「提案する、示唆する」という意味です。ここでは「こういう研究を今後したほうがいい」と述べている感じです。発音は「サジェスト」に近いです。
+
+future research は、「今後の研究」という意味です。research は「研究」です。発音はアメリカ英語だと「リサーチ」に近いです。
+
+should test の should は、「～すべきだ」という意味です。test はここでは「テストする」ではなく、「検証する、調べる」という意味で使われています。
+
+different time intervals の interval は、「間隔」という意味です。time intervals で「時間の間隔」です。たとえば、1か月ごとに調べるのか、半年ごとに調べるのか、そういう違いですね。発音は「インターヴァル」に近いです。
+
+compare A with B は、「AをBと比較する」という意味です。英語では compare A with B という形をしっかり覚えておくといいです。
+
+strengths-based leadership は少し専門的な表現です。strengths-based というのは、「強みを基盤にした」という意味です。strengths は「強み」、based は「～に基づいた」です。leadership は「リーダーシップ、指導のあり方」という意味です。つまり strengths-based leadership で、「人の弱点よりも強みに注目するタイプのリーダーシップ」ということです。
+
+other leadership styles の style は、「型、スタイル、やり方」という意味です。leadership styles で、「リーダーシップの型、指導スタイル」です。
+
+文法ポイントとしては、suggest のあとに future research should test ... と続いていて、「今後の研究は～すべきだと提案する」という形になっています。また、test と compare が and で並んでいて、「検証すること」と「比較すること」の2つを提案しているわけですね。

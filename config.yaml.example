@@ -1,0 +1,9 @@
+azure_openai_endpoint: "https://your-resource.cognitiveservices.azure.com"
+azure_openai_api_key: "your-api-key-here"
+
+# Podcast (GitHub Pages) 設定
+github_pages_base_url: "https://your-username.github.io/audio_paper"
+podcast_title: "Audio Paper Summary"
+podcast_description: "論文の英語・日本語要約と英語解説を音声で配信するPodcast"
+podcast_author: "your-name"
+podcast_language: "en"

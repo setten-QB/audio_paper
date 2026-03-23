@@ -1,0 +1,80 @@
+第7パラグラフを見ていきましょう。
+
+The study also found an important boundary condition.
+---
+まず文全体の意味です。  
+「その研究は、重要な限界条件も明らかにしました。」
+
+単語を見ていきます。  
+study という単語は、「研究」という意味です。ここでは「その研究」と訳しています。  
+found は find の過去形で、「見つけた」「明らかにした」という意味です。研究の結果として何かが分かった、というときによく使います。  
+important は、「重要な」という意味ですね。  
+boundary condition という表現は少し難しいです。これは「境界条件」とか「あることが成り立つ範囲を決める条件」という意味です。英文読解では、「いつでも成り立つわけではなく、こういう条件のときに成り立つ」という話でよく出てきます。  
+発音のコツですが、 boundary は「バウンダリー」に近い音です。condition は「コンディション」ですね。
+
+文法ポイントです。  
+この文はとてもシンプルで、The study が主語、found が動詞、an important boundary condition が目的語です。  
+also は「また、さらに」という意味で、前の内容に追加して述べていることが分かります。
+
+The combination of high proactive personality and high job autonomy partly compensated for a lack of strengths-based leadership.
+---
+文全体の意味です。  
+「積極的な性格が強いことと、仕事の自律性が高いことの組み合わせは、強みを生かす型のリーダーシップの不足を、ある程度補っていました。」
+
+単語を確認しましょう。  
+combination という単語は、「組み合わせ」という意味です。  
+proactive という単語は、「先を見て自発的に行動する」という意味です。reactive「言われてから反応する」と対比されることが多いです。発音は「プローアクティブ」に近いです。  
+personality は、「性格」です。  
+job autonomy は重要な表現です。autonomy という単語は、「自律性」「自分で決められる自由」という意味です。job autonomy で、「仕事の進め方を自分である程度決められること」と考えると分かりやすいです。発音は「オートノミー」に近いです。  
+partly は、「部分的に」「ある程度」という意味です。  
+compensated for は、「〜を補った」という意味です。compensate for A で「Aを埋め合わせる、補う」です。  
+a lack of という表現は、「〜の不足」という意味です。  
+strengths-based leadership は少し専門的です。strengths-based は、「強みに基づいた」という意味です。leadership は「リーダーシップ」なので、全体で「部下の強みに注目して、それを活用させるリーダーシップ」ということです。
+
+文法ポイントです。  
+主語は The combination of A and B です。「AとBの組み合わせ」が主語になっています。  
+compensate for はセットで覚えてください。compensate だけではなく、for まで含めて「〜を補う」です。  
+また、a lack of strengths-based leadership の lack は名詞で、「不足」です。
+
+Employees who were both proactive and free to shape their work relied less on their leader to help them use their strengths and feel job fit.
+---
+文全体の意味です。  
+「自発的であり、かつ自分の仕事の形を自由に決められる従業員は、自分の強みを生かしたり、仕事が自分に合っていると感じたりするために、リーダーに頼る度合いがより低かったのです。」
+
+単語を見ていきます。  
+employees は、「従業員たち」です。  
+who were both proactive and free to shape their work の部分は、employees を後ろから説明しています。  
+both A and B は、「AでもありBでもある」という意味です。  
+free to do は、「自由に〜できる」という意味です。  
+shape their work の shape はここでは「形作る」「自分で調整する」という意味です。つまり、仕事の内容ややり方をある程度自分で決める、ということです。  
+relied on は rely on の過去形で、「〜に頼った」という意味です。発音は「リライ・オン」に近いです。  
+less はここでは「より少なく」、つまり「あまり〜しない」ということです。  
+their strengths は、「彼らの強み」です。  
+feel job fit は少し難しい表現です。job fit は、「その仕事が自分に合っていること」「適職感」と考えると分かりやすいです。
+
+文法ポイントです。  
+Employees who were both proactive and free to shape their work の who 以下は関係代名詞の節で、employees を説明しています。  
+relied less on their leader の less は比較のニュアンスがあって、「より頼らなかった」という感じです。  
+to help them use their strengths and feel job fit の to は、不定詞で「〜するために」というより、ここでは leader を説明していて、「彼らが強みを使い、仕事との適合を感じるのを助けるための」というイメージです。  
+また、help A do で「Aが〜するのを助ける」という形も大事です。
+
+But if employees were less proactive, had less autonomy, or both, strengths-based leadership mattered much more.
+---
+文全体の意味です。  
+「しかし、もし従業員がそれほど積極的でなかったり、自律性が低かったり、あるいはその両方であったりすると、強みを生かす型のリーダーシップははるかに重要になりました。」
+
+単語を確認しましょう。  
+but は、「しかし」です。逆の内容に切り替わる合図ですね。  
+less proactive は、「あまり積極的でない」という意味です。  
+autonomy はさっきも出ましたが、「自律性」です。  
+or both は、「あるいはその両方」という意味です。つまり、「積極性も低いし、自律性も低い」というケースです。  
+strengths-based leadership は、「強みに基づくリーダーシップ」です。  
+mattered は matter の過去形で、「重要である」「問題になる」という意味です。ここでは「重要だった」と訳せます。  
+much more は、「はるかにもっと」という意味で、重要さが大きく増すことを表しています。
+
+文法ポイントです。  
+if employees were less proactive, had less autonomy, or both の部分は条件を表しています。「もし〜なら」です。  
+最後の mattered much more は比較表現で、「ずっと重要だった」という意味です。  
+この文は、前の文との対比が大切です。前の文では「自発的で自律性が高い人は、リーダーにあまり頼らない」と言っていましたが、この文では逆に「そうでない人にはリーダーシップがとても大事だ」と述べています。
+
+以上が第7パラグラフの解説です。

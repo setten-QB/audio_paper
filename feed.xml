@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Audio Paper Summary</title>
+    <link>https://setten-QB.github.io/audio_paper</link>
+    <description>論文の英語・日本語要約と英語解説を音声で配信するPodcast</description>
+    <language>en</language>
+    <itunes:author>setten-QB</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Education" />
+    <item>
+      <title>[enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job] English Summary</title>
+      <description>英語要約の音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/summary_en.mp3" length="2098461" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/summary_en.mp3</guid>
+      <pubDate>Sun, 22 Mar 2026 13:44:51 +0000</pubDate>
+      <itunes:episode>1</itunes:episode>
+    </item>
+    <item>
+      <title>[enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job] 日本語要約</title>
+      <description>日本語要約の音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/summary_ja.mp3" length="1761285" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/summary_ja.mp3</guid>
+      <pubDate>Sun, 22 Mar 2026 13:44:51 +0000</pubDate>
+      <itunes:episode>2</itunes:episode>
+    </item>
+    <item>
+      <title>[enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job] 英語解説 パラグラフ 1</title>
+      <description>パラグラフ1の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_1.mp3" length="3166581" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_1.mp3</guid>
+      <pubDate>Sun, 22 Mar 2026 13:44:51 +0000</pubDate>
+      <itunes:episode>3</itunes:episode>
+    </item>
+    <item>
+      <title>[enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job] 英語解説 パラグラフ 2</title>
+      <description>パラグラフ2の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_2.mp3" length="4469301" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_2.mp3</guid>
+      <pubDate>Sun, 22 Mar 2026 13:44:51 +0000</pubDate>
+      <itunes:episode>4</itunes:episode>
+    </item>
+    <item>
+      <title>[enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job] 英語解説 パラグラフ 3</title>
+      <description>パラグラフ3の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_3.mp3" length="3108261" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_3.mp3</guid>
+      <pubDate>Sun, 22 Mar 2026 13:44:51 +0000</pubDate>
+      <itunes:episode>5</itunes:episode>
+    </item>
+    <item>
+      <title>[enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job] 英語解説 パラグラフ 4</title>
+      <description>パラグラフ4の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_4.mp3" length="4666821" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_4.mp3</guid>
+      <pubDate>Sun, 22 Mar 2026 13:44:51 +0000</pubDate>
+      <itunes:episode>6</itunes:episode>
+    </item>
+    <item>
+      <title>[enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job] 英語解説 パラグラフ 5</title>
+      <description>パラグラフ5の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_5.mp3" length="2662365" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_5.mp3</guid>
+      <pubDate>Sun, 22 Mar 2026 13:44:51 +0000</pubDate>
+      <itunes:episode>7</itunes:episode>
+    </item>
+    <item>
+      <title>[enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job] 英語解説 パラグラフ 6</title>
+      <description>パラグラフ6の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_6.mp3" length="4986717" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_6.mp3</guid>
+      <pubDate>Sun, 22 Mar 2026 13:44:51 +0000</pubDate>
+      <itunes:episode>8</itunes:episode>
+    </item>
+    <item>
+      <title>[enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job] 英語解説 パラグラフ 7</title>
+      <description>パラグラフ7の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_7.mp3" length="3492837" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_7.mp3</guid>
+      <pubDate>Sun, 22 Mar 2026 13:44:51 +0000</pubDate>
+      <itunes:episode>9</itunes:episode>
+    </item>
+    <item>
+      <title>[enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job] 英語解説 パラグラフ 8</title>
+      <description>パラグラフ8の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_8.mp3" length="2787501" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_8.mp3</guid>
+      <pubDate>Sun, 22 Mar 2026 13:44:51 +0000</pubDate>
+      <itunes:episode>10</itunes:episode>
+    </item>
+    <item>
+      <title>[enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job] 英語解説 パラグラフ 9</title>
+      <description>パラグラフ9の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_9.mp3" length="3218973" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_9.mp3</guid>
+      <pubDate>Sun, 22 Mar 2026 13:44:51 +0000</pubDate>
+      <itunes:episode>11</itunes:episode>
+    </item>
+    <item>
+      <title>[enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job] 英語解説 パラグラフ 10</title>
+      <description>パラグラフ10の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_10.mp3" length="3330429" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_10.mp3</guid>
+      <pubDate>Sun, 22 Mar 2026 13:44:51 +0000</pubDate>
+      <itunes:episode>12</itunes:episode>
+    </item>
+    <item>
+      <title>[enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job] 英語解説 パラグラフ 11</title>
+      <description>パラグラフ11の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_11.mp3" length="3222069" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/enhancing_person-job-fit_who_needs_a_strengths_based_leader_to_fit_their_job/lesson_para_11.mp3</guid>
+      <pubDate>Sun, 22 Mar 2026 13:44:51 +0000</pubDate>
+      <itunes:episode>13</itunes:episode>
+    </item>
+  </channel>
+</rss>

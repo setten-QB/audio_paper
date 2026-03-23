@@ -1,0 +1,83 @@
+第4パラグラフを見ていきましょう。
+
+Using those data, they estimated individual adoption thresholds for each participant and each choice context.
+---
+まず文全体の意味です。  
+「それらのデータを使って、彼らは各参加者と各選択状況それぞれについて、個人ごとの採用のしきい値を推定しました。」
+
+では、単語や表現を見ていきます。  
+Using those data は、「それらのデータを使って」という意味です。using は「使って」という意味で、文の最初で「〜を用いて」と状況を付け加えています。those data の data は「データ」という意味です。発音は「デイタ」に近いです。英語では複数っぽく扱われることもありますが、ここではあまり難しく考えなくて大丈夫です。
+
+estimated という単語は、「推定した」という意味です。estimate で「見積もる、推定する」です。発音は「エスティメイティド」に近いです。テストでもよく出る単語です。
+
+individual adoption thresholds がこの文の大事な専門的表現です。  
+individual は「個人の」という意味です。  
+adoption はここでは「採用、受け入れ」という意味です。日常英語では「養子縁組」という意味もありますが、この文では「ある行動や考え方を取り入れること」です。発音は「アダプション」に近いです。  
+thresholds は「しきい値」という意味です。threshold はもともと「敷居」という意味がありますが、ここでは「ある行動を起こすために必要な最低ライン」のことです。たとえば、「何人かが先にやったら自分もやる」という、その何人かの基準ですね。発音は少し難しくて、「スレッショルド」に近いです。th は舌を軽く歯の間に当てる感じで出すときれいです。
+
+for each participant は「各参加者について」という意味です。participant は「参加者」です。発音は「パーティシパント」に近いです。
+
+and each choice context の context は「文脈、状況」という意味です。ここでは「選択が行われる状況」と考えれば大丈夫です。choice context で「選択の場面」や「選択状況」という意味になります。context の発音は「コンテクスト」に近いです。
+
+文法ポイントも確認します。  
+文頭の Using those data は、分詞構文のような形で、「それらのデータを使って」と手段を表しています。  
+また、for each participant and each choice context は、estimated thresholds にかかっていて、「それぞれの参加者、そしてそれぞれの選択状況ごとに」しきい値を推定した、ということを表しています。
+
+
+After that, they ran extensive simulations to test whether these estimated thresholds could improve social change interventions, especially seeding strategies.
+---
+文全体の意味です。  
+「その後、彼らは、これらの推定されたしきい値が社会変化への介入、特にシーディング戦略を改善できるかどうかを確かめるために、大規模なシミュレーションを行いました。」
+
+では、重要語句を見ていきます。  
+After that は、「その後」という意味です。話の流れをつなぐ表現です。
+
+ran extensive simulations の run は、ここでは「走る」ではなく、「実行する、行う」という意味です。ran はその過去形ですね。simulation は「シミュレーション、模擬実験」という意味です。発音は「シミュレイション」に近いです。  
+extensive は「広範囲な、大規模な、徹底的な」という意味です。ここでは「大規模な」と訳すと自然です。発音は「イクステンシブ」に近いです。
+
+to test whether ... は、「〜かどうかを確かめるために」という意味です。whether は「〜かどうか」です。if と似ていますが、文語的な説明文では whether がよく使われます。
+
+these estimated thresholds は、「これらの推定されたしきい値」という意味です。estimated は thresholds を後ろから説明していて、「推定された」という受け身っぽい意味になっています。
+
+could improve は、「改善できるかもしれない」「改善できる」という意味です。could は可能性や控えめな表現を出しています。
+
+social change interventions は少し難しい表現です。  
+social change は「社会変化」です。社会の中の行動や考え方を変えていくことですね。  
+interventions という単語は、「介入、働きかけ」という意味です。何かをよりよい方向に変えるために、外から手を加えることです。発音は「インターベンションズ」に近いです。高校生には少し難しめなので、しっかり覚えておくといいです。
+
+especially seeding strategies の especially は「特に」です。  
+seeding strategies は「シーディング戦略」です。seed はもともと「種」という意味ですが、ここでは「最初に少数の人に働きかけて、そこから広げる方法」を表します。strategy は「戦略」です。発音は「ストラテジー」に近いです。
+
+文法ポイントです。  
+to test whether ... は不定詞で、「何のためにシミュレーションをしたのか」という目的を表しています。  
+また、whether these estimated thresholds could improve ... という部分は、test の目的語になっていて、「〜かどうか」をまるごとひとかたまりで test している形です。
+
+
+Seeding means giving an initial push to a small number of people, with the hope that their behaviour will spread through the wider network.
+---
+文全体の意味です。  
+「シーディングとは、少数の人々に最初の後押しを与え、その人たちの行動がより広いネットワーク全体に広がっていくことを期待することです。」
+
+では、単語や表現を確認しましょう。  
+Seeding は、この文章では専門用語で、「最初に少人数へ働きかけて、そこから全体へ広める方法」という意味です。seed が「種」なので、「最初に種をまく」イメージを持つと分かりやすいです。発音は「シーディング」に近いです。
+
+means は「意味する」という意味です。Seeding means ... で、「シーディングとは〜のことです」と定義を述べています。
+
+giving an initial push の initial は、「最初の、初期の」という意味です。発音は「イニシャル」に近いです。  
+push はここでは「押す」ではなく、「後押し、きっかけ、促し」という意味です。initial push で「最初のひと押し」という感じです。
+
+to a small number of people は、「少数の人々に」という意味です。a number of は「いくつかの、複数の」という意味でもよく出ますが、ここでは small がついているので「少数の」と考えれば大丈夫です。
+
+with the hope that ... は、「…という期待を持って」という意味です。hope that で「…であることを期待する」です。
+
+their behaviour will spread の behaviour は「行動、ふるまい」という意味です。イギリス英語のつづりで、アメリカ英語だと behavior になります。発音は「ビヘイビア」に近いです。  
+spread は「広がる、広める」という意味です。ここでは will spread で「広がっていくだろう」です。
+
+through the wider network の through は「〜を通じて」という意味です。  
+wider は wide「広い」の比較級で、「より広い」という意味です。  
+network は「ネットワーク、人と人とのつながり」です。ここではインターネットだけではなく、人間関係や社会的なつながり全体を指しています。発音は「ネットワーク」に近いです。
+
+文法ポイントです。  
+Seeding means giving ... では、means の後ろに動名詞 giving が来ています。「シーディングとは、〜することです」と説明しています。  
+また、with the hope that their behaviour will spread ... は、「どんな期待を持っているのか」を付け加えて説明しています。  
+that 以下では will spread が使われていて、「今後広がっていく」という未来のイメージが出ています。

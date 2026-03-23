@@ -1,0 +1,39 @@
+第5パラグラフを見ていきましょう。
+
+The main result is that interventions work best when they combine two kinds of information: the structure of the social network and the behavioural traits of individuals, especially their adoption thresholds.
+---
+まず文全体の意味です。  
+「主な結果は、介入策は、2種類の情報を組み合わせるときに最も効果的に機能するということです。つまり、社会的ネットワークの構造と、個人の行動的な特性、特にその人たちの採用のしきい値です。」
+
+では、重要な語句を見ていきます。  
+main result という表現は、「主な結果」「最も重要な研究結果」という意味です。result は「結果」です。発音は「リザルト」に近いです。  
+intervention という単語は、「介入」「働きかけ」という意味です。研究文脈では、何かを改善するために外から加える方法や施策のことを指します。発音は「インターベンション」に近いです。  
+work best は、「最もうまくいく」「最も効果的である」という意味です。best をつけることで、いちばん効果が高いことを表しています。  
+combine という単語は、「組み合わせる」という意味です。発音は「コンバイン」です。  
+two kinds of information は、「2種類の情報」です。kinds of は「種類の」という定番表現ですね。  
+the structure of the social network は、「社会的ネットワークの構造」という意味です。structure は「構造」です。発音は「ストラクチャー」に近いです。social network は、SNSだけではなく、人と人とのつながり全体を指す言葉としても使われます。  
+behavioural traits of individuals は、「個人の行動的特性」という意味です。behavioural という単語は、「行動に関する」という意味です。イギリス英語つづりで、アメリカ英語では behavioral と書くことが多いです。traits は「特性」「特徴」です。発音は「トレイツ」です。individuals は「個人」「それぞれの人たち」という意味です。  
+especially は、「特に」という意味です。  
+adoption thresholds は、少し専門的です。adoption はここでは「採用」「受け入れ」を意味します。何か新しい行動や考え方を取り入れることです。threshold は「しきい値」という意味で、「ある行動を起こすために必要な境目」を表します。つまり adoption thresholds で、「人が新しい行動を受け入れるまでに必要な条件や程度」ということです。発音は threshold が「スレッショルド」に近いです。th の音は、舌先を軽く歯にはさんで「ス」と「ズ」の間のように出すのがコツです。
+
+文法ポイントも確認しましょう。  
+The main result is that ... という形は、「主な結果は〜ということだ」という表現です。that 以下が result の内容を説明しています。  
+when they combine ... は、「それらが〜を組み合わせるとき」と訳します。when はここでは「〜するとき」で、条件に近い意味で使われています。  
+コロンの後ろの two kinds of information の内容が具体的に並べられていて、the structure of the social network と the behavioural traits of individuals がその2つです。especially their adoption thresholds は、behavioural traits の中でも特に何を重視するのかを補足しています。
+
+Approaches based only on network position, or only on behavioural traits, performed worse.
+---
+まず文全体の意味です。  
+「ネットワーク上の位置だけに基づく方法、あるいは行動的特性だけに基づく方法は、より悪い結果でした。つまり、効果が低かったということです。」
+
+重要な語句を見ていきます。  
+approach という単語は、「方法」「やり方」という意味です。ここでは approaches と複数形になっていて、「いくつかの方法」ということです。発音は「アプローチ」です。  
+based on ... は、「〜に基づいた」という意味の重要表現です。とてもよく出るので覚えておきましょう。  
+network position は、「ネットワーク上の位置」という意味です。これは、人と人とのつながりの中で、その人がどこにいるか、どれくらい中心にいるか、どことつながっているか、ということを表します。position は「位置」です。  
+behavioural traits は、前の文と同じで「行動的特性」です。  
+performed worse の perform はここでは、「機能する」「成績を示す」という意味です。performed worse で、「より悪い成績だった」「よりうまくいかなかった」という意味になります。worse は bad の比較級で、「より悪い」です。best や worse のように、比較の表現に注意したいですね。
+
+文法ポイントです。  
+Approaches based only on network position の based は、過去分詞で approaches を後ろから説明しています。つまり、「ネットワーク上の位置だけに基づいた方法」というかたまりになっています。  
+or only on behavioural traits は、前半と並列になっていて、「あるいは行動的特性だけに基づいた方法」と理解します。  
+performed worse は比較表現で、「ほかの方法と比べて、より劣っていた」というニュアンスです。ここでは前の文で述べられた「2種類の情報を組み合わせる方法」と比べて、効果が低かったと述べているわけです。

@@ -1,0 +1,102 @@
+第3パラグラフを見ていきましょう。
+
+To solve this, the researchers connected complexity science with behavioural science.
+---
+まず文全体の意味です。「この問題を解決するために、研究者たちは複雑性科学と行動科学を結びつけました。」となります。
+
+では、単語と表現を見ていきましょう。  
+solve という単語は、「解決する」という意味です。発音は「ソルヴ」に近いです。最後の v の音を軽く下唇と上の歯で出すのがコツです。  
+researchers という単語は、「研究者たち」という意味です。researcher が「研究者」で、最後に s がついて複数になっています。発音は「リサーチャーズ」に近いです。  
+connected A with B という表現は、「AとBを結びつけた」という意味です。英語では connect A with B の形をよく使います。  
+complexity science という表現は、「複雑性科学」という意味です。これは、たくさんの要素が関係し合う複雑なしくみを研究する分野です。complexity は「複雑さ」、science は「科学」です。  
+behavioural science という表現は、「行動科学」という意味です。人の行動や意思決定を科学的に研究する分野です。behavioural はイギリス式のつづりで、アメリカ英語では behavioral と書くこともあります。発音は「ビヘイビアラル」に近いです。
+
+文法ポイントです。  
+To solve this の to 不定詞は、「～するために」と目的を表しています。つまり、「何のために研究者たちはそれをしたのか」を説明している形ですね。
+
+
+They reinterpreted adoption thresholds using discrete-choice models, which are commonly used in consumer research to understand how people choose between options.
+---
+文全体の意味です。「彼らは、採用のしきい値を、離散選択モデルを用いて新しく解釈しました。これは、人々が選択肢のあいだでどのように選ぶのかを理解するために、消費者研究で一般的に使われているものです。」となります。
+
+単語と表現を確認しましょう。  
+reinterpreted という単語は、「再解釈した」「新しい見方で解釈し直した」という意味です。interpret が「解釈する」で、re がつくことで「もう一度」「別の形で」というニュアンスが出ます。発音は「リーインタープリティド」に近いです。  
+adoption thresholds という表現は、「採用のしきい値」という意味です。adoption はここでは「新しいものを受け入れること、採用」です。threshold は少し難しい単語で、「敷居」「境目」「しきい値」という意味です。ここでは、「ある人が新しいものを受け入れるまでに必要な条件やきっかけ」のことです。  
+using ～ は、「～を使って」という意味です。  
+discrete-choice models という表現は、「離散選択モデル」という意味です。これは専門用語ですが、簡単にいうと、「いくつかのはっきり分かれた選択肢の中から、人がどれを選ぶかを分析するモデル」です。discrete は「バラバラの、連続していない」という意味で、choice は「選択」、model は「モデル」です。発音は discrete が「ディスクリート」、models が「モデルズ」に近いです。  
+commonly という単語は、「一般的に、ふつうは」という意味です。発音は「コモンリー」に近いです。  
+consumer research という表現は、「消費者研究」という意味です。consumer は「消費者」です。  
+between options という表現は、「複数の選択肢の間で」という意味です。option は「選択肢」です。
+
+文法ポイントです。  
+which are commonly used in consumer research は、直前の discrete-choice models を説明している関係代名詞の which です。「そしてそれは～です」と後ろから追加説明しているイメージですね。  
+また、to understand how people choose between options の to は、「理解するために」という目的を表しています。  
+how people choose between options は、「人々がどのように選ぶか」という間接疑問の形です。
+
+
+Then they designed two choice-based conjoint experiments.
+---
+文全体の意味です。「そのあと彼らは、2つの選択ベースのコンジョイント実験を設計しました。」となります。
+
+単語を見ていきます。  
+Then は、「それから、その次に」という意味です。  
+designed という単語は、「設計した」「計画した」という意味です。design は「デザインする」だけでなく、研究や実験を「設計する」という意味でもよく使います。  
+choice-based conjoint experiments という表現は、かなり専門的です。「選択ベースのコンジョイント実験」と訳せます。conjoint experiment は、いくつかの条件の組み合わせを見せて、参加者がどれを選ぶかを調べる実験です。簡単にいうと、「人が何を重視して選んでいるのか」を明らかにするための方法です。choice-based がついているので、「実際に選ばせる形の」実験だと分かります。  
+experiment は「実験」という意味です。ここでは experiments と複数形なので、「2つの実験」です。
+
+文法ポイントです。  
+この文はとてもシンプルで、主語 They、動詞 designed、目的語 two choice-based conjoint experiments という第3文型です。読みやすい文ですね。
+
+
+In one, participants repeatedly chose which energy policies to support.
+---
+文全体の意味です。「そのうちの1つでは、参加者たちは、どのエネルギー政策を支持するかを何度も選びました。」となります。
+
+単語と表現です。  
+In one は、「そのうちの1つでは」という意味です。前の文に two experiments とあったので、その2つのうちの1つを指しています。  
+participants という単語は、「参加者たち」という意味です。発音は「パーティシパンツ」に近いです。  
+repeatedly という単語は、「繰り返し、何度も」という意味です。発音は「リピーテッドリー」に近いです。  
+chose は choose の過去形で、「選んだ」という意味です。発音は「チョウズ」に近いです。choose-chose-chosen の形もあわせて覚えておくといいです。  
+energy policies という表現は、「エネルギー政策」という意味です。policy は「政策、方針」です。複数形なので、複数の政策案があったことが分かります。  
+support という単語は、「支持する、支援する」という意味です。
+
+文法ポイントです。  
+which energy policies to support は、「どのエネルギー政策を支持するべきか、支持するか」という意味で、疑問詞 + to不定詞 の形です。  
+この形は高校英語でよく出ます。たとえば、what to do なら「何をすべきか」、where to go なら「どこへ行くべきか」という意味になります。
+
+
+In the other, they chose whether to adopt new instant messaging apps.
+---
+文全体の意味です。「もう一方では、彼らは新しいインスタントメッセージアプリを導入するかどうかを選びました。」となります。
+
+単語と表現を確認しましょう。  
+In the other は、「もう一方では」という意味です。2つあるうちの残りの1つを指しています。  
+whether to adopt という表現は、「採用するかどうか」という意味です。whether は「～かどうか」です。  
+adopt という単語は、「採用する、取り入れる」という意味です。ここではアプリを使い始める、導入する、という意味ですね。発音は「アダプト」に近いです。  
+instant messaging apps という表現は、「インスタントメッセージアプリ」という意味です。つまり、すぐにメッセージを送受信できるアプリのことです。instant は「即時の」、messaging は「メッセージのやりとり」、apps は applications の省略で「アプリ」です。
+
+文法ポイントです。  
+whether to adopt ～ は、「～を採用するかどうか」という形です。whether のあとに to不定詞が続いています。  
+また、new instant messaging apps の new は apps 全体にかかっていて、「新しいメッセージアプリ」という意味になります。
+
+
+In both studies, the researchers varied how much social support each option appeared to have, so they could observe how social influence affected decisions.
+---
+文全体の意味です。「両方の研究で、研究者たちは、それぞれの選択肢がどれくらい社会的支持を得ているように見えるかを変えました。そうすることで、社会的影響が意思決定にどのように影響したのかを観察できたのです。」となります。
+
+では、重要語句です。  
+In both studies は、「両方の研究で」という意味です。both は「両方の」です。  
+varied という単語は、「変化させた、変えた」という意味です。vary が「変える、変化する」です。発音は「ヴェアリード」に近いです。  
+how much social support という表現は、「どれくらいの社会的支持」という意味です。social support はここでは、「まわりの人たちからの支持」や「社会の中での後押し」という意味です。  
+each option は、「それぞれの選択肢」という意味です。  
+appeared to have は、「持っているように見えた」という意味です。appear to do で「～するように見える」という形です。ここでは、「実際に支持があるかどうか」よりも、「あるように見せる」ということがポイントです。  
+so はここでは、「だから」よりも、「その結果」「そうすることで」という意味です。  
+could observe は、「観察することができた」という意味です。observe は「観察する」です。  
+social influence という表現は、「社会的影響」という意味です。まわりの人や社会の雰囲気が、自分の判断に与える影響のことです。  
+affected という単語は、「影響を与えた」という意味です。affect は動詞で「～に影響する」です。よく effect と混同しやすいので注意してください。  
+decisions という単語は、「決定、意思決定」という意味です。
+
+文法ポイントです。  
+how much social support each option appeared to have の部分は、「それぞれの選択肢がどれだけ支持を得ているように見えるか」という内容を表す名詞節です。varied の目的語になっています。  
+so they could observe ～ は、「その結果、彼らは～を観察できた」という意味で、目的や結果を表しています。  
+さらに、how social influence affected decisions は、「社会的影響が意思決定にどう影響したか」という間接疑問です。how のあとが普通の語順になっているところに注意してください。
