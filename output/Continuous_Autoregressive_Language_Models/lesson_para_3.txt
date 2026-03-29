@@ -1,0 +1,16 @@
+第3パラグラフです。
+
+On top of that latent space, CALM trains an autoregressive Transformer over vector sequences rather than token sequences.
+---
+日本語訳: その潜在空間の上で、CALMはトークン列ではなくベクトル列を対象として自己回帰型Transformerを学習する。  
+補足: "On top of that latent space" は「その潜在表現を基盤として」という意味です。"autoregressive" は、過去の要素に基づいて次を予測する生成方式を指します。"over vector sequences rather than token sequences" は、この手法が離散トークンではなく連続ベクトルを扱う点を強調しています。
+
+The hard part is that next-vector prediction is likelihood-free: there’s no finite vocabulary, no softmax, and no tractable density for standard cross-entropy training or perplexity evaluation.
+---
+日本語訳: 難しい点は、次ベクトル予測が尤度を明示的に扱わない likelihood-free な設定であることであり、有限語彙がなく、softmax もなく、標準的な交差エントロピー学習や perplexity 評価に使える扱いやすい確率密度も存在しない。  
+補足: "likelihood-free" は、明示的な確率モデルや尤度計算に依存しないことを意味します。"tractable density" は計算可能な確率密度のことです。この文は、通常の言語モデル評価指標がそのまま使えない理由を述べています。
+
+Their solution is a full likelihood-free toolkit.
+---
+日本語訳: 彼らの解決策は、likelihood-free のための一式の手法群である。  
+補足: "toolkit" は単一の手法ではなく、複数の学習・評価の仕組みをまとめて指す表現です。

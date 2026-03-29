@@ -14,6 +14,8 @@ import argparse
 import base64
 import json
 import os
+import re
+import subprocess
 import sys
 import tempfile
 from datetime import datetime, timezone
@@ -170,7 +172,7 @@ def text_to_speech(text: str, output_path: str, config: dict, voice: str = "allo
         system_prompt = "あなたは日本語のネイティブスピーカーです。自然な日本語の発音とイントネーションで読み上げてください。"
         user_prompt = f"以下のテキストを、そのまま正確に読み上げてください。余計なコメントは加えないでください:\n\n{text}"
     else:
-        system_prompt = "You are a native English speaker."
+        system_prompt = "You are a native British English speaker using Received Pronunciation (RP). Speak with standard RP accent, pronunciation, and intonation throughout."
         user_prompt = f"Please read the following text aloud exactly as written, without adding any commentary:\n\n{text}"
 
     completion = client.chat.completions.create(
@@ -186,6 +188,105 @@ def text_to_speech(text: str, output_path: str, config: dict, voice: str = "allo
     audio_data = base64.b64decode(completion.choices[0].message.audio.data)
     with open(output_path, "wb") as f:
         f.write(audio_data)
+
+
+def parse_lesson_segments(script: str) -> list[dict]:
+    """レッスン台本を英語/日本語セグメントに分割する。
+
+    台本フォーマット:
+      日本語導入文
+      英文1
+      ---
+      日本語解説1
+      英文2
+      ---
+      日本語解説2
+      ...
+
+    Returns: [{"text": "...", "lang": "ja"}, {"text": "...", "lang": "en"}, ...]
+    """
+    # --- で区切られたブロックに分割
+    blocks = re.split(r"\n---\n", script)
+    segments = []
+
+    for idx, block in enumerate(blocks):
+        block = block.strip()
+        if not block:
+            continue
+
+        if idx == 0:
+            # 最初のブロック: 日本語導入 + 最初の英文
+            # 最後の英文を分離する（英文は末尾にある）
+            lines = block.split("\n")
+            # 末尾から英文行を探す（ASCII文字が多い行を英文とみなす）
+            en_lines = []
+            ja_lines = list(lines)
+            while ja_lines:
+                last = ja_lines[-1].strip()
+                if last and _is_english(last):
+                    en_lines.insert(0, ja_lines.pop())
+                else:
+                    break
+            if ja_lines:
+                segments.append({"text": "\n".join(ja_lines).strip(), "lang": "ja"})
+            if en_lines:
+                segments.append({"text": "\n".join(en_lines).strip(), "lang": "en"})
+        else:
+            # --- の後のブロック: 日本語解説 + 次の英文
+            lines = block.split("\n")
+            en_lines = []
+            ja_lines = list(lines)
+            while ja_lines:
+                last = ja_lines[-1].strip()
+                if last and _is_english(last):
+                    en_lines.insert(0, ja_lines.pop())
+                else:
+                    break
+            if ja_lines:
+                segments.append({"text": "\n".join(ja_lines).strip(), "lang": "ja"})
+            if en_lines:
+                segments.append({"text": "\n".join(en_lines).strip(), "lang": "en"})
+
+    return segments
+
+
+def _is_english(text: str) -> bool:
+    """テキストが英語かどうかを判定する（ASCII文字の割合で判定）。"""
+    if not text:
+        return False
+    ascii_chars = sum(1 for c in text if ord(c) < 128)
+    return ascii_chars / len(text) > 0.7
+
+
+def lesson_to_speech(
+    script: str, output_path: str, config: dict,
+    en_voice: str = "alloy", ja_voice: str = "alloy",
+) -> None:
+    """レッスン台本を英語/日本語セグメントに分割し、それぞれ適切な言語で音声合成して結合する。"""
+    segments = parse_lesson_segments(script)
+
+    if not segments:
+        text_to_speech(script, output_path, config, voice=ja_voice, lang="ja")
+        return
+
+    with tempfile.TemporaryDirectory() as tmpdir:
+        segment_files = []
+        for idx, seg in enumerate(segments):
+            seg_path = os.path.join(tmpdir, f"seg_{idx:03d}.mp3")
+            voice = en_voice if seg["lang"] == "en" else ja_voice
+            text_to_speech(seg["text"], seg_path, config, voice=voice, lang=seg["lang"])
+            segment_files.append(seg_path)
+
+        # ffmpeg で結合
+        concat_list = os.path.join(tmpdir, "concat.txt")
+        with open(concat_list, "w") as f:
+            for sf in segment_files:
+                f.write(f"file '{sf}'\n")
+
+        subprocess.run(
+            ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", concat_list, "-c", "copy", output_path],
+            check=True, capture_output=True,
+        )
 
 
 def get_mp3_size(file_path: str) -> int:
@@ -299,6 +400,14 @@ def main():
     else:
         episode_name = args.episode_name or datetime.now().strftime("%Y%m%d_%H%M%S")
         output_dir = project_root / "episodes" / episode_name
+    # 既存ディレクトリとの衝突を回避
+    if output_dir.exists() and any(output_dir.iterdir()):
+        base = output_dir
+        suffix = 2
+        while output_dir.exists() and any(output_dir.iterdir()):
+            output_dir = base.parent / f"{base.name}_{suffix}"
+            suffix += 1
+        print(f"既存ディレクトリと衝突するため {output_dir.name} に出力します")
     output_dir.mkdir(parents=True, exist_ok=True)
     # episodes/ からの相対パス (RSSフィード用)
     try:
@@ -367,7 +476,7 @@ def main():
 
         print(f"  パラグラフ {i}/{len(paragraphs)}: 音声生成中...")
         lesson_audio_path = str(output_dir / f"lesson_para_{i}.mp3")
-        text_to_speech(script, lesson_audio_path, config, voice=args.ja_voice, lang="ja")
+        lesson_to_speech(script, lesson_audio_path, config, en_voice=args.en_voice, ja_voice=args.ja_voice)
         print(f"  保存: {lesson_audio_path}")
 
         # パラグラフごとの台本テキストも保存

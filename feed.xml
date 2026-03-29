@@ -214,5 +214,93 @@
       <pubDate>Mon, 23 Mar 2026 23:21:00 +0000</pubDate>
       <itunes:episode>25</itunes:episode>
     </item>
+    <item>
+      <title>[Continuous_Autoregressive_Language_Models] English Summary</title>
+      <description>英語要約の音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/summary_en.mp3" length="2962725" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/summary_en.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:56:57 +0000</pubDate>
+      <itunes:episode>26</itunes:episode>
+    </item>
+    <item>
+      <title>[Continuous_Autoregressive_Language_Models] 日本語要約</title>
+      <description>日本語要約の音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/summary_ja.mp3" length="2443269" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/summary_ja.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:56:57 +0000</pubDate>
+      <itunes:episode>27</itunes:episode>
+    </item>
+    <item>
+      <title>[Continuous_Autoregressive_Language_Models] 英語解説 パラグラフ 1</title>
+      <description>パラグラフ1の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_1.mp3" length="1059812" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_1.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:56:57 +0000</pubDate>
+      <itunes:episode>28</itunes:episode>
+    </item>
+    <item>
+      <title>[Continuous_Autoregressive_Language_Models] 英語解説 パラグラフ 2</title>
+      <description>パラグラフ2の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_2.mp3" length="1955540" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_2.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:56:57 +0000</pubDate>
+      <itunes:episode>29</itunes:episode>
+    </item>
+    <item>
+      <title>[Continuous_Autoregressive_Language_Models] 英語解説 パラグラフ 3</title>
+      <description>パラグラフ3の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_3.mp3" length="1041596" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_3.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:56:57 +0000</pubDate>
+      <itunes:episode>30</itunes:episode>
+    </item>
+    <item>
+      <title>[Continuous_Autoregressive_Language_Models] 英語解説 パラグラフ 4</title>
+      <description>パラグラフ4の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_4.mp3" length="1820468" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_4.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:56:57 +0000</pubDate>
+      <itunes:episode>31</itunes:episode>
+    </item>
+    <item>
+      <title>[Continuous_Autoregressive_Language_Models] 英語解説 パラグラフ 5</title>
+      <description>パラグラフ5の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_5.mp3" length="1011860" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_5.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:56:57 +0000</pubDate>
+      <itunes:episode>32</itunes:episode>
+    </item>
+    <item>
+      <title>[Continuous_Autoregressive_Language_Models] 英語解説 パラグラフ 6</title>
+      <description>パラグラフ6の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_6.mp3" length="1438196" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_6.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:56:57 +0000</pubDate>
+      <itunes:episode>33</itunes:episode>
+    </item>
+    <item>
+      <title>[Continuous_Autoregressive_Language_Models] 英語解説 パラグラフ 7</title>
+      <description>パラグラフ7の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_7.mp3" length="1460444" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_7.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:56:57 +0000</pubDate>
+      <itunes:episode>34</itunes:episode>
+    </item>
+    <item>
+      <title>[Continuous_Autoregressive_Language_Models] 英語解説 パラグラフ 8</title>
+      <description>パラグラフ8の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_8.mp3" length="2025836" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_8.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:56:57 +0000</pubDate>
+      <itunes:episode>35</itunes:episode>
+    </item>
+    <item>
+      <title>[Continuous_Autoregressive_Language_Models] 英語解説 パラグラフ 9</title>
+      <description>パラグラフ9の英文読み上げと日本語解説</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_9.mp3" length="1449596" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/Continuous_Autoregressive_Language_Models/lesson_para_9.mp3</guid>
+      <pubDate>Mon, 23 Mar 2026 23:56:57 +0000</pubDate>
+      <itunes:episode>36</itunes:episode>
+    </item>
   </channel>
 </rss>

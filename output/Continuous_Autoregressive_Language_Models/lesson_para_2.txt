@@ -1,0 +1,26 @@
+第2パラグラフです。
+
+The key enabler is a lightweight autoencoder that maps K tokens to a latent vector and back with extremely high fidelity.
+---
+日本語訳: 中核となる実現要素は、K個のトークンを潜在ベクトルに写像し、さらにそこから元に戻せる軽量なオートエンコーダであり、その再現精度はきわめて高いです。  
+補足: key enabler は「成立を可能にする主要技術」という意味です。 maps A to B and back は「AをBに変換し、再び元に戻す」という論文でよく出る表現です。 high fidelity は「高忠実度」で、情報をほとんど損なわず復元できることを示します。
+
+For K equals 4, they report over 99.9 percent token reconstruction accuracy.
+---
+日本語訳: Kが4の場合、トークン再構成精度は99.9パーセントを超えると報告しています。  
+補足: report は論文では「報告する」。 token reconstruction accuracy は、復元後のトークン列が元のトークン列とどれだけ一致するかを表す指標です。
+
+But reconstruction alone isn’t enough: a vanilla autoencoder produces a brittle latent space where tiny perturbations decode to unrelated text, which makes downstream generation unstable.
+---
+日本語訳: しかし、単に再構成できるだけでは十分ではありません。標準的なオートエンコーダは、わずかな摂動でも無関係なテキストにデコードされてしまう脆い潜在空間を生み、それが下流の生成を不安定にします。  
+補足: vanilla autoencoder は特別な正則化のない基本形を指します。 brittle latent space は「少しの変化に弱い潜在空間」です。 downstream generation は、その潜在表現を使った後段の生成処理を意味します。
+
+So they regularize the latent space with a VAE-style objective, KL clipping to prevent posterior collapse, and dropout both on latent vectors and masked input tokens.
+---
+日本語訳: そこで彼らは、VAE風の目的関数、posterior collapse を防ぐためのKL clipping、さらに潜在ベクトルとマスクされた入力トークンの両方へのドロップアウトによって、潜在空間を正則化します。  
+補足: regularize the latent space は、潜在空間を滑らかで扱いやすくすることです。 posterior collapse はVAEで潜在変数が有効に使われなくなる問題です。 KL clipping はKL項の極端な影響を抑える処理を指しています。
+
+That gives them a robust latent manifold where sampled noise around the latent still decodes correctly, again at above 99.9 percent accuracy.
+---
+日本語訳: その結果、潜在表現の周辺でサンプリングしたノイズを加えても正しくデコードできる、頑健な潜在多様体が得られ、ここでも精度は再び99.9パーセントを超えます。  
+補足: robust latent manifold は、局所的なゆらぎに対して意味的に安定な潜在空間を指します。 sampled noise around the latent は、潜在ベクトル近傍での摂動サンプリングのことです。 correctly は単なる再構成成功ではなく、近傍でも意味が保たれる点が重要です。
