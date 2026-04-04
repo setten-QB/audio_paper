@@ -1,0 +1,16 @@
+第1パラグラフです。
+
+CALM proposes a pretty radical change to autoregressive language modeling: instead of predicting the next discrete token, it predicts the next continuous vector, where each vector encodes a chunk of K tokens.
+---
+日本語訳: CALMは自己回帰型言語モデリングに対してかなり大胆な変更を提案している。つまり、次の離散的なトークンを予測する代わりに、次の連続ベクトルを予測し、その各ベクトルがK個のトークンからなるチャンクを符号化する。
+補足: "autoregressive language modeling" は自己回帰型言語モデルのこと。"discrete token" と "continuous vector" の対比が重要で、トークン単位予測からベクトル単位予測への発想の転換を述べている。"chunk of K tokens" はKトークンをひとまとまりとして扱うことを意味する。
+
+The core motivation is that LLM efficiency is bottlenecked by sequential generation.
+---
+日本語訳: 中心的な動機は、LLMの効率が逐次生成によってボトルネックになっているという点である。
+補足: "the core motivation is that ..." は論文で主張の背景を簡潔に示す定番表現。"is bottlenecked by" は「〜によって性能上の制約を受ける」という意味で、計算機科学の文脈で頻出する。
+
+If one step can carry the information of multiple tokens, you cut the number of autoregressive steps by a factor of K.
+---
+日本語訳: 1回のステップで複数トークン分の情報を運べるなら、自己回帰ステップ数をK分の1に削減できる。
+補足: "by a factor of K" は「K倍の比率で」「K分の1に」という意味で、計算量や高速化の説明でよく使われる表現。ここでは生成ステップ数の削減効果を端的に述べている。

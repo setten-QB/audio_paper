@@ -1,0 +1,26 @@
+第4パラグラフです。
+
+For training, they use an energy-based objective derived from the Energy Score, which is a strictly proper scoring rule.
+---
+日本語訳: 学習では、Energy Score に由来するエネルギーベースの目的関数を用いており、Energy Score は厳密に proper な scoring rule です。  
+補足: 「energy-based objective」は損失設計の中心概念です。「strictly proper scoring rule」は、真の分布を正しく予測することが理論的に最適になる評価規則を指し、目的関数の妥当性を支える表現です。
+
+Instead of maximizing likelihood, the model samples candidate vectors and minimizes a sample-based loss that rewards closeness to the true latent while preserving output diversity.
+---
+日本語訳: 尤度を最大化する代わりに、このモデルは候補ベクトルをサンプルし、真の潜在表現への近さを報酬としつつ、出力の多様性も保つようなサンプルベースの損失を最小化します。  
+補足: 「instead of maximizing likelihood」は従来の尤度ベース学習との対比です。「preserving output diversity」は、単に正解に近づけるだけでなく、多峰性や不確実性も扱いたいことを示しています。
+
+Their generative head is an “Energy Transformer”: a small residual MLP stack conditioned on the Transformer hidden state and random noise, designed for single-step vector generation.
+---
+日本語訳: 彼らの生成ヘッドは「Energy Transformer」であり、Transformer の隠れ状態とランダムノイズを条件として与える、小規模な residual MLP の積み重ねで、1ステップのベクトル生成向けに設計されています。  
+補足: 「generative head」は出力生成を担う最終部です。「conditioned on」は条件付き生成の記述として頻出です。「single-step vector generation」がこの手法の効率性の鍵です。
+
+That choice matters because diffusion or flow-matching heads would reintroduce iterative decoding and undermine the efficiency gains.
+---
+日本語訳: この選択が重要なのは、diffusion や flow matching のヘッドを使うと反復的なデコーディングが再び必要になり、効率向上の利点が損なわれるからです。  
+補足: 「reintroduce iterative decoding」は、一度避けた逐次・反復生成の計算コストが戻ることを意味します。「undermine the efficiency gains」は論文でよく出る、提案法の利点を弱めるという言い回しです。
+
+In their ablations, the energy head beats diffusion and slightly outperforms flow matching, while requiring only one generation step.
+---
+日本語訳: アブレーション実験では、energy head は diffusion を上回り、flow matching よりもわずかに高性能でありながら、必要な生成ステップは1回 בלבדです。  
+補足: 「ablations」は構成要素ごとの比較実験です。「beats」「slightly outperforms」は結果の優劣を簡潔に述べる典型表現で、「while requiring only one generation step」により性能と効率の両立を強調しています。
