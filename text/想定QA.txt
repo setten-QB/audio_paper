@@ -1,0 +1,90 @@
+Question: What is the main contribution of your paper in one sentence?
+Answer: Our main contribution is a method to estimate Shared Mental Models continuously and non-intrusively from communication data using categories and interaction dynamics.
+
+Question: How is this different from prior work?
+Answer: Our approach integrates both communication categories and interaction structure, unlike prior work relying only on surveys or text.
+
+Question: Why is SMM important?
+Answer: SMM enables coordination and improves team performance by aligning understanding among team members.
+
+Question: Your SMM measure is based on perceived SMM. Is that a limitation?
+Answer: Yes, it is a limitation. We use it because it is scalable, and we complement it with agreement measures to interpret results.
+
+Question: How do you ensure annotation quality without reading messages?
+Answer: We use an ensemble of LLMs and validate them with human annotations on a separate dataset.
+
+Question: Did you validate LLM annotations against humans?
+Answer: Yes, we compared with human annotations and found substantial agreement.
+
+Question: Why use LLMs instead of humans?
+Answer: They allow scalable and privacy-preserving annotation.
+
+Question: Why did you select only specific categories?
+Answer: We selected categories based on empirical correlation with SMM to reduce noise.
+
+Question: Why use a graph neural network?
+Answer: Because communication is relational and GNN captures interaction structure effectively.
+
+Question: Why not just use embeddings?
+Answer: Embeddings alone ignore interaction structure and perform worse.
+
+Question: How good is your model performance?
+Answer: Our model outperforms baselines with lower RMSE.
+
+Question: Is this accurate enough for real-world use?
+Answer: It is useful for monitoring but not yet a full replacement for surveys.
+
+Question: What are the main limitations?
+Answer: Use of perceived SMM, limited dataset, and lack of multimodal communication.
+
+Question: Does this generalize beyond Slack?
+Answer: Yes, the approach is platform-agnostic.
+
+Question: What is the HCI contribution?
+Answer: It enables continuous sensing of team cognition from interaction data.
+
+Question: How long of a communication history is needed?
+Answer: Longer histories improve stability, but minimum length is future work.
+
+Question: Did you try different embeddings?
+Answer: We used a standard model; exploring others is future work.
+
+Question: Can this evaluate individuals?
+Answer: Currently it focuses on teams, but could be extended.
+
+Question: Would cultural differences affect results?
+Answer: Yes, communication styles vary across cultures.
+
+Question: Could this be used for hiring?
+Answer: It should be used cautiously as a support tool, not for evaluation.
+
+Question: How do you know it’s not just communication volume?
+Answer: We compare with baselines and show improved performance.
+
+Question: Does it scale?
+Answer: Yes, the method is scalable by design.
+
+Question: Could it be overfitting?
+Answer: We mitigate via baselines, but broader validation is future work.
+
+Question: Is SMM like cohesion?
+Answer: No, SMM is shared understanding, while cohesion is social bonding.
+
+Question: Is higher SMM always better?
+Answer: Generally yes, but too much rigidity can reduce adaptability.
+
+Question: Does more communication mean higher SMM?
+Answer: No, communication type matters more than volume.
+
+Question: What would you improve?
+Answer: Accuracy and generalization to new contexts.
+
+Question: What surprised you most?
+Answer: That dynamics alone were not useful without categories.
+
+Question: Could this be used in games?
+Answer: Potentially, with adaptation.
+
+Question: Could AI teams use this?
+Answer: Yes, AI systems could monitor shared understanding similarly.
+

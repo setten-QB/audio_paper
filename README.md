@@ -53,6 +53,26 @@ python summarize_to_audio.py paper.pdf --en-voice sage --ja-voice shimmer
 
 利用可能な声: `alloy` / `ash` / `ballad` / `coral` / `echo` / `sage` / `shimmer` / `verse` / `marin` / `cedar`
 
+### テキストファイルから音声生成
+
+`text/` ディレクトリ配下のテキストファイルを直接読み上げ音声に変換できる。要約ステップを経ずにそのまま TTS で音声化する。
+
+```bash
+# 基本（言語は自動検出）
+python text_to_audio.py text/想定QA.txt
+
+# 言語を明示指定
+python text_to_audio.py text/想定QA.txt --lang en
+
+# 日英混在テキスト（セグメントごとに声を切替）
+python text_to_audio.py text/想定QA.txt --lang mixed
+
+# エピソード名・声を指定
+python text_to_audio.py text/想定QA.txt -e qa_session --en-voice sage --ja-voice alloy
+```
+
+長文は TTS 制限（5分/パート）に合わせて自動的にパート分割される。
+
 ## 出力
 
 `episodes/<エピソード名>/` 以下に生成される。

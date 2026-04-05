@@ -206,5 +206,13 @@
       <pubDate>Mon, 23 Mar 2026 23:56:57 +0000</pubDate>
       <itunes:episode>24</itunes:episode>
     </item>
+    <item>
+      <title>[想定QA]</title>
+      <description>想定QA.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/想定QA/audio.mp3" length="2157909" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/想定QA/audio.mp3</guid>
+      <pubDate>Sun, 05 Apr 2026 11:04:27 +0000</pubDate>
+      <itunes:episode>25</itunes:episode>
+    </item>
   </channel>
 </rss>
