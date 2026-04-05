@@ -1,0 +1,477 @@
+No. 1
+Question
+What is the main contribution of your paper in one sentence?
+
+Answer
+Our main contribution is a novel method to estimate Shared Mental Models (SMM) continuously and non-intrusively from instant messaging data by combining communication categories and communication dynamics in a graph neural network framework.
+
+--------------------------------------------------------------------------------
+
+No. 2
+Question
+How is this different from prior work?
+
+Answer
+Unlike prior work that either relies on questionnaires or analyses communication content alone, our approach integrates communicative functions and directed interaction structures, enabling scalable and privacy-preserving SMM estimation from everyday communication logs.
+
+--------------------------------------------------------------------------------
+
+No. 3
+Question
+Why is SMM important?
+
+Answer
+SMM has been shown to strongly influence team performance, enabling coordination even with limited communication and improving collaborative efficiency.
+
+--------------------------------------------------------------------------------
+
+No. 4
+Question
+Your SMM measure is based on perceived SMM. Is that a limitation?
+
+Answer
+Yes, we acknowledge that 5-PSMMS measures perceived rather than structural SMM. We chose it because it provides a standardized and scalable measure across real-world teams. We therefore position our work as estimating perceived shared understanding, and we explicitly complement it with agreement measures.
+
+--------------------------------------------------------------------------------
+
+No. 5
+Question
+How do you address agreement among team members?
+
+Answer
+We explicitly measure within-team agreement using the rwg(j) index, which quantifies consistency across members. We also show a positive correlation between rwg(j) and SMM, suggesting that higher perceived SMM tends to co-occur with stronger agreement.
+
+--------------------------------------------------------------------------------
+
+No. 6
+Question
+How do you ensure annotation quality without reading messages?
+
+Answer
+We use an ensemble of multiple LLMs with majority voting and also conduct additional validation on a separate consented dataset.
+
+--------------------------------------------------------------------------------
+
+No. 7
+Question
+Did you validate LLM annotations against humans?
+
+Answer
+Yes. In a separate dataset with full consent, we compared LLM annotations with human annotations and found substantial agreement, along with high internal stability under bootstrap resampling.
+
+--------------------------------------------------------------------------------
+
+No. 8
+Question
+Why use LLMs instead of human annotation?
+
+Answer
+Human annotation is not scalable and conflicts with privacy constraints. Our approach enables large-scale analysis without exposing message content.
+
+--------------------------------------------------------------------------------
+
+No. 9
+Question
+Why did you use Carletta et al.’s framework?
+
+Answer
+We chose it because it provides general-purpose communicative functions applicable across domains, unlike software-specific taxonomies.
+
+--------------------------------------------------------------------------------
+
+No. 10
+Question
+Why did you select only specific categories?
+
+Answer
+Through empirical analysis, we found that only certain categories correlate with SMM, while others add noise. Our goal was predictive usefulness rather than claiming universal relevance.
+
+--------------------------------------------------------------------------------
+
+No. 11
+Question
+Why does Inform correlate positively with SMM?
+
+Answer
+Inform messages directly contribute to shared knowledge, which aligns with the definition of SMM as shared understanding.
+
+--------------------------------------------------------------------------------
+
+No. 12
+Question
+Why do Elicit-inform and Be-positive show negative correlations?
+
+Answer
+Frequent Elicit-inform can suggest lack of shared understanding, and highly distributed Be-positive interactions may reflect diffuse rather than coordinated communication patterns.
+
+--------------------------------------------------------------------------------
+
+No. 13
+Question
+Why use a graph neural network?
+
+Answer
+Because communication is inherently relational. GNNs allow us to model who communicates with whom and how information flows within the team.
+
+--------------------------------------------------------------------------------
+
+No. 14
+Question
+Why directed graphs?
+
+Answer
+Direction captures asymmetry in communication—who sends versus who receives—which is important for modelling coordination dynamics.
+
+--------------------------------------------------------------------------------
+
+No. 15
+Question
+Why not just use text embeddings?
+
+Answer
+Baselines using only embeddings perform worse because they ignore structure and communication roles.
+
+--------------------------------------------------------------------------------
+
+No. 16
+Question
+What is the key finding about communication dynamics?
+
+Answer
+Communication dynamics alone are not sufficient, but they significantly improve performance when combined with communication categories.
+
+--------------------------------------------------------------------------------
+
+No. 17
+Question
+How good is your model performance?
+
+Answer
+Our model achieves RMSE = 13.5 and outperforms all baselines.
+
+--------------------------------------------------------------------------------
+
+No. 18
+Question
+Is this accurate enough for real-world use?
+
+Answer
+It is not yet a full replacement for questionnaires, but it provides a practical and continuous monitoring signal that complements traditional measurement.
+
+--------------------------------------------------------------------------------
+
+No. 19
+Question
+What are real-world applications?
+
+Answer
+Possible applications include education, healthcare, and disaster response, where continuous awareness of shared understanding could support coordination.
+
+--------------------------------------------------------------------------------
+
+No. 20
+Question
+What are the main limitations?
+
+Answer
+The main limitations are that SMM is measured as perceived rather than actual, the dataset size is limited, communication outside IMS is not captured, and accuracy is not yet sufficient for high-stakes decisions.
+
+--------------------------------------------------------------------------------
+
+No. 21
+Question
+Does this generalise beyond Slack?
+
+Answer
+Yes. The framework is platform-agnostic and can be applied to other communication logs with sender-receiver structure.
+
+--------------------------------------------------------------------------------
+
+No. 22
+Question
+What about verbal communication?
+
+Answer
+Our current approach focuses on text-based IMS. Extending it to multimodal data such as speech is an important future direction.
+
+--------------------------------------------------------------------------------
+
+No. 23
+Question
+Correlation does not imply causation. How do you justify feature selection?
+
+Answer
+We explicitly state that correlations are used only for feature selection, not causal claims. The goal is to identify predictive signals for SMM estimation.
+
+--------------------------------------------------------------------------------
+
+No. 24
+Question
+Why use a threshold like 0.2 for correlation?
+
+Answer
+The threshold is empirically determined from the observed distributions and is not presented as a universal rule.
+
+--------------------------------------------------------------------------------
+
+No. 25
+Question
+Why not use Spearman correlation?
+
+Answer
+That is a valid suggestion. Future work could use non-parametric correlations to better handle non-normal distributions.
+
+--------------------------------------------------------------------------------
+
+No. 26
+Question
+What is the HCI contribution?
+
+Answer
+We provide a new way to operationalise team cognition using interaction data, enabling continuous and unobtrusive sensing of collective cognitive states.
+
+--------------------------------------------------------------------------------
+
+No. 27
+Question
+How does this inform system design?
+
+Answer
+It enables systems that can detect breakdowns in shared understanding and potentially trigger feedback or interventions to support collaboration.
+
+--------------------------------------------------------------------------------
+
+No. 28
+Question
+What is the next step?
+
+Answer
+The next steps are improving accuracy, incorporating richer and multimodal features, and designing intervention systems based on SMM feedback.
+
+--------------------------------------------------------------------------------
+
+No. 29
+Question
+Yeah, so I really like the idea of estimating SMM from communication, I think it's very interesting… but I’m a bit concerned about the fact that you’re using perceived SMM as your ground truth. Because, you know, perceived SMM doesn’t necessarily reflect actual shared cognition, right? And also, since you average across members, I’m wondering how you deal with disagreement within teams… So could you clarify how we should interpret your results given these limitations?
+
+Answer
+Thank you, that’s a very important point. You’re absolutely right that our measure is based on perceived SMM rather than structural SMM. We chose 5-PSMMS because it provides a standardized and scalable measure that can be applied across multiple real-world teams, which is essential for our goal of large-scale estimation. To address disagreement, we explicitly compute within-team agreement using rwg(j), which captures how consistent team members’ perceptions are. We also report that agreement correlates with SMM, suggesting that higher SMM scores tend to reflect more aligned perceptions. So our results should be interpreted as estimating perceived shared understanding rather than the exact cognitive structure, and we acknowledge this as an important limitation.
+
+--------------------------------------------------------------------------------
+
+No. 30
+Question
+I think the annotation approach is quite creative, especially from a privacy perspective… but I’m still not fully convinced about the reliability of using LLMs as annotators. I mean, without access to the original data, how can we really trust that these labels are correct? Did you do anything beyond agreement scores to validate them?
+
+Answer
+Thank you, that’s a very valid concern. Since we couldn’t access the original corporate data, we conducted a separate validation study using a Slack dataset with full consent. In that setting, we compared LLM annotations with human annotations and found substantial agreement. We also performed a bootstrap analysis showing high internal consistency. While this does not guarantee perfect correctness, it suggests that the LLM ensemble produces stable and reasonably aligned annotations. We position this as a practical trade-off between privacy and annotation quality.
+
+--------------------------------------------------------------------------------
+
+No. 31
+Question
+So in your analysis, you selected only a subset of communication categories… and excluded others based on correlation analysis. But I’m wondering… isn’t that a bit ad hoc? Like, how do we know that those excluded categories are actually irrelevant, rather than just noisy in your dataset?
+
+Answer
+That’s a great question. Our goal in Study 1 was not to make causal claims, but to identify predictive signals for SMM estimation. We observed that some categories consistently showed low or near-zero correlation with SMM, even after removing sparse cases, suggesting limited predictive contribution. Including those categories actually degraded model performance, which indicates that they function as noise in this context. That said, we do not claim these categories are universally irrelevant—only that they were not useful for prediction in our dataset.
+
+--------------------------------------------------------------------------------
+
+No. 32
+Question
+I see that you’re using a graph neural network… but I’m wondering whether that’s really necessary. Couldn’t you achieve similar results with simpler models, like just aggregating embeddings or using standard regression?
+
+Answer
+Yes, that’s exactly what we tested in our baselines. We compared against models using only text embeddings and models using undirected graphs. The results show that using only embeddings performs poorly, using graph structure improves performance, and combining both communication categories and directed dynamics performs best. This suggests that the relational structure of communication is essential, which is naturally captured by GNNs.
+
+--------------------------------------------------------------------------------
+
+No. 33
+Question
+So your RMSE is about 13.5… and if I understand correctly, that’s around 13% of the mean SMM score. Do you think that’s actually good enough for practical use? Like, could a manager really rely on this?
+
+Answer
+That’s an important question. We do not claim that our method can replace questionnaires at this stage. Instead, we position it as a continuous and lightweight signal that complements traditional measurement. The key value is that it enables real-time monitoring without burdening team members, which was not possible before. Improving accuracy remains an important direction for future work.
+
+--------------------------------------------------------------------------------
+
+No. 34
+Question
+Your dataset is based on Slack communication… but in many real-world settings, teams communicate across multiple channels—like meetings, emails, etc. So how well do you think your approach generalises beyond Slack?
+
+Answer
+That’s a great point. Our approach is not specific to Slack—it relies on sender–receiver structure and communication sequences, which are available in many systems. However, we acknowledge that it currently captures only part of team communication, and extending it to multimodal settings is an important future direction.
+
+--------------------------------------------------------------------------------
+
+No. 35
+Question
+I’m trying to understand the HCI contribution here… beyond the modelling aspect, how do you see this actually impacting interactive systems or user experience?
+
+Answer
+Thank you, that’s an important perspective. We see this work as enabling a new class of systems that can sense collective cognitive states from interaction data. For example, systems could detect when shared understanding is declining and provide feedback or interventions to support collaboration. So the contribution is not only the model, but also a new way to operationalise team cognition in interactive systems.
+
+--------------------------------------------------------------------------------
+
+No. 36
+Question
+This might be a basic question, but… how long of a communication history do you actually need to estimate SMM reliably? Like, would this work for short-term teams?
+
+Answer
+That’s a great question. In our current setup, we use communication accumulated over the team’s activity period, which varies across teams. We have not yet systematically evaluated minimum data length, but based on our observations, longer interaction histories tend to produce more stable estimates. Investigating the minimum required data for reliable estimation is an important direction for future work.
+
+--------------------------------------------------------------------------------
+
+No. 37
+Question
+I’m just curious… did you try different embedding models? Or do you think the choice of embedding actually matters here?
+
+Answer
+In this study, we used a standard embedding model for consistency and simplicity. While we expect that different embeddings may affect performance, our main focus was on the structural and categorical aspects of communication. Exploring the impact of different embeddings is definitely an interesting direction for future work.
+
+--------------------------------------------------------------------------------
+
+No. 38
+Question
+So… if I understand correctly, you're not using message content directly, right? Then what exactly is the model learning from?
+
+Answer
+Yes, that’s correct—we do not use raw message content directly. The model learns from two aspects: the function of communication via categorised dialogue acts, and the structure of interactions, meaning who communicates with whom. So it captures patterns of communication rather than raw semantic content itself.
+
+--------------------------------------------------------------------------------
+
+No. 39
+Question
+Do you think this could be used to evaluate individual performance as well?
+
+Answer
+That’s an interesting idea. Our current approach focuses on team-level cognition rather than individual performance. However, since the model estimates intermediate representations at the user level, extending it to analyse individual contributions could be possible in future work.
+
+--------------------------------------------------------------------------------
+
+No. 40
+Question
+This might be unrelated, but… do you think cultural differences would affect your results?
+
+Answer
+Yes, I believe cultural differences could influence communication styles and therefore affect the model. Since our dataset is limited to a specific organisational context, evaluating cross-cultural generalisability is an important future direction.
+
+--------------------------------------------------------------------------------
+
+No. 41
+Question
+Have you considered using this for hiring or evaluating teams?
+
+Answer
+That’s an important consideration. We believe this approach should be used primarily as a support tool for understanding team dynamics, rather than for evaluation or decision-making about individuals. Ethical use and transparency are critical in applying such methods.
+
+--------------------------------------------------------------------------------
+
+No. 42
+Question
+I’m not fully convinced… how do you know your model isn’t just predicting communication volume rather than SMM?
+
+Answer
+That’s a very important point. We address this by comparing with baselines that use only communication volume or coarse structure, which perform worse than our model. This suggests that the model captures more nuanced patterns beyond simple activity levels.
+
+--------------------------------------------------------------------------------
+
+No. 43
+Question
+Your dataset seems relatively small… do you think your model would scale?
+
+Answer
+Yes, scalability is one of the motivations of our approach. Since annotation is automated and the model relies on communication structure, it is inherently scalable to larger datasets. However, validating performance on larger and more diverse datasets is future work.
+
+--------------------------------------------------------------------------------
+
+No. 44
+Question
+I’m wondering… could your model just be overfitting to your specific dataset?
+
+Answer
+That’s a valid concern. We mitigate this by comparing with multiple baselines and focusing on relatively general features such as communication categories and structure. Still, external validation on different datasets is necessary to fully confirm generalisability.
+
+--------------------------------------------------------------------------------
+
+No. 45
+Question
+So… is SMM like team cohesion?
+
+Answer
+That’s a good question. SMM is different from cohesion. Cohesion refers to social bonding, while SMM refers to shared understanding of tasks, roles, and processes. They are related but conceptually distinct.
+
+--------------------------------------------------------------------------------
+
+No. 46
+Question
+Is higher SMM always better?
+
+Answer
+In general, higher SMM is associated with better coordination and performance. However, overly rigid shared models may reduce adaptability, so the relationship can depend on context.
+
+--------------------------------------------------------------------------------
+
+No. 47
+Question
+Does more communication mean higher SMM?
+
+Answer
+Not necessarily. Our findings suggest that the types of communication matter more than sheer quantity. For example, frequent information requests may indicate lower shared understanding.
+
+--------------------------------------------------------------------------------
+
+No. 48
+Question
+If you had more time, what would you improve?
+
+Answer
+I would focus on improving estimation accuracy and validating the model in more diverse real-world settings, including multimodal communication.
+
+--------------------------------------------------------------------------------
+
+No. 49
+Question
+What surprised you most in your results?
+
+Answer
+One surprising finding was that communication dynamics alone did not help much, but became important when combined with communication categories.
+
+--------------------------------------------------------------------------------
+
+No. 50
+Question
+What’s the biggest limitation?
+
+Answer
+The biggest limitation is that we estimate perceived SMM rather than actual cognitive structures.
+
+--------------------------------------------------------------------------------
+
+No. 51
+Question
+Could this be used in online games?
+
+Answer
+Potentially yes, since many online games involve team communication, but it would require adapting the model to that context.
+
+--------------------------------------------------------------------------------
+
+No. 52
+Question
+Could this work for couples?
+
+Answer
+That’s an interesting idea. While our focus is on team settings, the concept of shared understanding could potentially be applied to other types of interaction as well.
+
+--------------------------------------------------------------------------------
+
+No. 53
+Question
+Could AI teams use this to monitor themselves?
+
+Answer
+Yes, in principle, AI agents communicating with each other could use similar methods to estimate shared understanding within the system.
+
+--------------------------------------------------------------------------------
+

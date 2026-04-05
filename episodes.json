@@ -173,5 +173,33 @@
     "path": "episodes/想定QA/audio.mp3",
     "length": "2157909",
     "pub_date": "Sun, 05 Apr 2026 11:04:27 +0000"
+  },
+  {
+    "title": "[qa_pairs] パート 1",
+    "description": "qa_pairs.txt の読み上げ音声",
+    "path": "episodes/qa_pairs/part_1.mp3",
+    "length": "3086685",
+    "pub_date": "Sun, 05 Apr 2026 11:57:52 +0000"
+  },
+  {
+    "title": "[qa_pairs] パート 2",
+    "description": "qa_pairs.txt の読み上げ音声",
+    "path": "episodes/qa_pairs/part_2.mp3",
+    "length": "2553741",
+    "pub_date": "Sun, 05 Apr 2026 11:57:52 +0000"
+  },
+  {
+    "title": "[qa_pairs] パート 3",
+    "description": "qa_pairs.txt の読み上げ音声",
+    "path": "episodes/qa_pairs/part_3.mp3",
+    "length": "2737533",
+    "pub_date": "Sun, 05 Apr 2026 11:57:52 +0000"
+  },
+  {
+    "title": "[qa_pairs] パート 4",
+    "description": "qa_pairs.txt の読み上げ音声",
+    "path": "episodes/qa_pairs/part_4.mp3",
+    "length": "2620029",
+    "pub_date": "Sun, 05 Apr 2026 11:57:52 +0000"
   }
 ]

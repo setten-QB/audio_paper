@@ -214,5 +214,37 @@
       <pubDate>Sun, 05 Apr 2026 11:04:27 +0000</pubDate>
       <itunes:episode>25</itunes:episode>
     </item>
+    <item>
+      <title>[qa_pairs] パート 1</title>
+      <description>qa_pairs.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/qa_pairs/part_1.mp3" length="3086685" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/qa_pairs/part_1.mp3</guid>
+      <pubDate>Sun, 05 Apr 2026 11:57:52 +0000</pubDate>
+      <itunes:episode>26</itunes:episode>
+    </item>
+    <item>
+      <title>[qa_pairs] パート 2</title>
+      <description>qa_pairs.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/qa_pairs/part_2.mp3" length="2553741" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/qa_pairs/part_2.mp3</guid>
+      <pubDate>Sun, 05 Apr 2026 11:57:52 +0000</pubDate>
+      <itunes:episode>27</itunes:episode>
+    </item>
+    <item>
+      <title>[qa_pairs] パート 3</title>
+      <description>qa_pairs.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/qa_pairs/part_3.mp3" length="2737533" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/qa_pairs/part_3.mp3</guid>
+      <pubDate>Sun, 05 Apr 2026 11:57:52 +0000</pubDate>
+      <itunes:episode>28</itunes:episode>
+    </item>
+    <item>
+      <title>[qa_pairs] パート 4</title>
+      <description>qa_pairs.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/qa_pairs/part_4.mp3" length="2620029" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/qa_pairs/part_4.mp3</guid>
+      <pubDate>Sun, 05 Apr 2026 11:57:52 +0000</pubDate>
+      <itunes:episode>29</itunes:episode>
+    </item>
   </channel>
 </rss>
