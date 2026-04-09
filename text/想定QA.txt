@@ -1,0 +1,296 @@
+----------------------------------------------------------------------
+1. Data Collection and Preprocessing
+----------------------------------------------------------------------
+
+Question: How did you identify message receivers from Slack? How did you handle messages without @mentions?
+Answer: We extracted receivers by identifying @user_id strings in each message using regular expressions. Importantly, analysts did not read the message content during this process. Messages without explicit @mentions were excluded from directed graph construction. Handling @here and @channel broadcasts, which target all channel members, remains an open question for future work.
+(Reference: Paper Section 3.2.1)
+(Related Appendix: Slide 20)
+
+Question: Your observation periods range from 74 to over 1,000 days. Doesn't this huge variation create a confound?
+Answer: This is a valid concern. Teams with longer observation periods naturally accumulate more messages and may undergo more membership changes, project transitions, and shifts in task priorities. Message logs do not explicitly record when individuals join or leave a team, so some communication traces may represent interactions among partially different sets of members at different points in time. Future work should consider approaches such as dynamic edge weighting or explicit modeling of membership entry and exit events.
+(Reference: Paper Section 7, "Team membership dynamics and temporal variation")
+
+Question: Why did you choose text-embedding-ada-002? Did you consider other embedding models?
+Answer: We selected text-embedding-ada-002 from Microsoft Azure's OpenAI service for its simplicity, convenience, and usability. It produces 1536-dimensional vectors. We did not conduct a systematic comparison of embedding models in this study, so it is possible that newer or domain-adapted models could improve performance. This remains an avenue for future exploration.
+(Reference: Paper Section 3.2.1)
+
+Question: Your messages are in Japanese. How well do the LLMs and embedding model handle Japanese text?
+Answer: The three LLMs we used — GPT-4o, Gemini Pro, and Claude 3.5 Sonnet — all have strong multilingual capabilities including Japanese. However, Carletta et al.'s annotation manual was originally written in English for the AMI Meeting Corpus. We provided this English manual to the LLMs and had them annotate Japanese messages. There may be cultural or linguistic nuances in Japanese IMS communication — such as honorifics, emoticons, and abbreviations — that the framework does not fully capture. The 5-PSMMS questionnaire items were also translated to Japanese for our study.
+
+Question: Is 16 teams a statistically sufficient sample size?
+Answer: The small sample size of 16 teams is a key limitation. Statistical power for team-level analyses is inherently limited. The correlation analyses in Study 1 should be interpreted as exploratory rather than confirmatory. For the GNN evaluation, we designed baselines to systematically isolate contributions of communication categories and dynamics, which strengthens interpretation even with a small sample. Nonetheless, replication with a larger and more diverse set of teams is essential.
+
+Question: Not all members responded to the questionnaire. Are SMM scores from low-response teams reliable?
+Answer: This is an important point. Since only a subset of members responded, the SMM score may not fully represent the entire team. However, we used the within-team agreement index r_wg(j) to assess convergence of responses, and teams with higher agreement provide more reliable scores. Quantitatively analyzing the relationship between response rate and score reliability is an important direction for future work.
+
+----------------------------------------------------------------------
+2. Communication Categories and Annotation
+----------------------------------------------------------------------
+
+Question: Why did you choose Carletta's framework over others? What about Perera et al.'s taxonomy for software teams?
+Answer: Perera et al. developed a fine-grained hierarchical taxonomy specifically for software team chat on Slack, including categories for code review and issue tracking. Our dataset includes teams engaged in diverse R&D activities beyond software development. We chose Carletta et al.'s framework because its general-purpose categories — such as Inform, Suggest, and Be-positive — capture fundamental communicative functions essential for SMM formation across diverse team contexts.
+(Reference: Paper Section 2.4)
+
+Question: You selected 11 out of 14 categories but ultimately used only 3 for estimation. Why not let the model automatically learn which categories matter?
+Answer: Two reasons. First, with only 16 teams, including irrelevant categories would introduce noise rather than useful signal. Second, empirically identifying which communication functions matter for SMM is itself a contribution of our work. Additionally, three categories — Offer, Assess, and Elicit-assessment — did not appear in our Slack data at all. Categories like Suggest and Elicit-offer-or-suggestion were excluded because their correlation coefficients were below 0.2 after removing near-zero data points.
+(Reference: Paper Section 4.3.1)
+
+Question: Why is Be-positive negatively correlated with SMM? That seems counterintuitive.
+Answer: This surprised us as well. Our hypothesis is that it is not Be-positive communication itself that decreases SMM, but rather its distribution pattern. In low-SMM teams, Be-positive messages tend to be highly dispersed — many members exchange positive interactions with multiple others simultaneously. In contrast, high-SMM teams show more concentrated Be-positive communication patterns. We believe it is the highly distributed nature of Be-positive communications — rather than positivity per se — that is associated with lower SMM. This is consistent with our broader finding that communication dynamics matter.
+(Reference: Paper Section 4.3.2)
+
+Question: The inter-LLM Krippendorff's alpha is 0.73. Is that sufficient? How do you handle disagreements among LLMs?
+Answer: An alpha of 0.73 indicates substantial, though not perfect, agreement. When LLMs disagree, we use majority voting — the category assigned by at least two of three LLMs becomes the final label. Bootstrap analysis with 100 resampled datasets yielded an average alpha of 0.87, indicating high internal consistency. Note that the human inter-annotator alpha was 0.75, comparable to the inter-LLM level of 0.73.
+(Related Appendix: Slide 21; Reference: Paper Section 4.2)
+
+Question: You validated on an auxiliary Slack channel, not the actual corporate data. How confident are you that annotation quality transfers?
+Answer: Our research protocol prohibited researchers from inspecting the corporate Slack content. We used a separate Slack workspace where all participants explicitly consented to human inspection. While the auxiliary channel confirms that LLMs can reliably apply the Carletta framework to Slack messages, we cannot guarantee identical annotation quality on corporate data, which may contain more specialized jargon, abbreviations, or context-dependent expressions. Developing domain-adapted models or anonymized validation methods is an important future direction.
+(Reference: Paper Section 4.2)
+
+Question: What was the LLM prompt like? Did you use few-shot examples?
+Answer: We gave all three LLMs the same prompt containing the original message and the explanation of each tag from Carletta et al.'s annotation guideline (dialogue_acts_manual_1.0.pdf). The paper does not detail the exact prompt structure or whether few-shot examples were used, but the LLMs were instructed to assign categories based on the guideline definitions.
+(Reference: Paper Section 4.1)
+
+----------------------------------------------------------------------
+3. Model and Evaluation
+----------------------------------------------------------------------
+
+Question: Why GCN specifically? Did you consider other GNN architectures like GAT or GraphSAGE?
+Answer: We chose GCN as a starting point because it provides a straightforward framework for aggregating neighborhood information. Our primary contribution is the extension to directed, weighted, category-wise graphs — orthogonal to the choice of base GNN architecture. Attention-based mechanisms like GAT are promising but risk overfitting with only 16 teams. Exploring more expressive architectures with larger datasets is future work.
+
+Question: How did you evaluate with only 16 teams? What cross-validation strategy did you use?
+Answer: We used leave-one-team-out cross-validation. In each fold, we trained on 15 teams and evaluated on the remaining one, repeating 16 times. The reported RMSE is the average across all folds. This is a standard approach for small datasets, ensuring every team serves as a test case exactly once.
+
+Question: RMSE of 13.50 (~13% relative error) — is this actually useful in practice?
+Answer: Frankly, the estimation precision does not yet allow us to fully replace questionnaire-based SMM measurement. The RMSE of 13.50 is about 1.26 times the empirical standard deviation of SMM scores, meaning the error exceeds the natural variability across teams. However, this provides a promising basis for continuous, lightweight monitoring. Even approximate SMM tracking can alert managers to potential declines, informing targeted interventions or questionnaire timing. The goal is complementing — not replacing — existing measurement.
+(Reference: Paper Section 5.4)
+
+Question: What would happen if you used a different set of communication categories? Is the model sensitive to this choice?
+Answer: We did not directly test this, but baseline comparisons provide indirect evidence. Baseline 2 (all categories, undirected) achieved 21.08, while Baseline 3 (selected categories, undirected) achieved 16.58. This suggests that including all categories introduces noise from irrelevant communication types. Category selection significantly impacts performance. More sophisticated approaches like learnable category attention could be explored with larger datasets.
+
+Question: How would you extend this to temporal modeling?
+Answer: The paper discusses several directions: temporal GNNs that process time-stamped graph snapshots, dynamic edge weighting that captures evolving communication patterns, and recurrent architectures modeling sequential SMM development. Additionally, explicitly modeling membership entry and exit events is important, since teams underwent member reassignment and role rotation during the observation period. The key challenge is that we currently have only one questionnaire measurement per team, so collecting ground-truth temporal SMM trajectories is necessary.
+(Reference: Paper Section 7)
+
+Question: Can you explain the baseline design rationale? Why these four specific baselines?
+Answer: We designed baselines to systematically isolate contributions of communication categories and dynamics. Baseline 1 uses no graph structure (conversation content only). Baseline 2 uses an undirected GCN without distinguishing categories. Baseline 3 uses category-wise undirected graphs (no dynamics). Baseline 4 uses directed graphs with our aggregation but without category distinctions. This design yields the finding that categories are important, dynamics alone are insufficient, and combining both is most effective. Since no prior work estimates SMM from IMS, we needed to design custom baselines.
+(Reference: Paper Section 5.3)
+
+----------------------------------------------------------------------
+4. Conceptual and Theoretical
+----------------------------------------------------------------------
+
+Question: 5-PSMMS measures "perceived" SMM, not "actual" cognitive alignment. Isn't there a gap?
+Answer: Yes, this is an important distinction. The 5-PSMMS captures members' subjective perception, which may differ from actual cognitive alignment. However, perceived SMM has been shown in prior literature to correlate positively with team performance. Measuring "actual" SMM — through concept mapping or paired comparison — is even more resource-intensive and impractical for continuous monitoring. The positive correlation of 0.67 between r_wg and SMM suggests that perceived SMM co-occurs with internal consistency, providing indirect evidence of genuine shared understanding.
+(Reference: Paper Section 3.2.2)
+
+Question: Some teams had negative r_wg values. Doesn't that undermine the validity of their SMM scores?
+Answer: Negative r_wg values mean within-team variance exceeds what is expected under a uniform distribution — responses are more dispersed than random. For such teams, the aggregated SMM score may represent heterogeneous perceptions rather than a truly shared mental model. Future work should consider agreement-aware modeling or uncertainty representations, such as differentially weighting teams with low r_wg during training.
+(Reference: Paper Section 7)
+
+Question: Teams also communicate face-to-face and in meetings. Is Slack data alone sufficient?
+Answer: Our dataset was collected from organizations where remote work was the primary mode of operation, with Slack as the dominant communication channel. Online meetings and face-to-face interactions were supplementary. For teams relying heavily on in-person communication, Slack data alone may not capture the full picture. Incorporating multimodal communication data — meeting transcripts, video call interactions — is an important future direction.
+(Reference: Paper Section 3.2)
+
+Question: Could this approach be gamed? For example, by artificially sending more Inform messages?
+Answer: This relates to Goodhart's Law — when a measure becomes a target, it ceases to be a good measure. If team members learn which categories correlate with higher SMM, they might strategically alter their messaging. However, our model captures not just category ratios but also communication dynamics — structural patterns of who communicates with whom — which are much harder to manipulate artificially. Nonetheless, we emphasize this tool should support managerial decision-making, not be used as a direct employee evaluation metric.
+
+Question: How does your work relate to Transactive Memory Systems (TMS)? Is SMM the same as TMS?
+Answer: They are related but distinct. TMS refers to the shared system for encoding, storing, and retrieving information — "who knows what" in the team. SMM is broader, encompassing shared understanding of tasks, processes, and team interactions. TMS focuses on division of cognitive labor; SMM focuses on overlap of mental representations. Our communication categories may capture aspects of both — Elicit-inform may relate to TMS (seeking knowledge from the right person), while Inform may build shared task understanding (SMM) — but we measured only SMM in this study.
+
+Question: What is the difference between SMM and team cohesion?
+Answer: SMM refers to shared cognitive understanding of tasks, processes, and interactions. Team cohesion refers to social bonding — the interpersonal attraction and sense of unity among members. A team can have high SMM but weak social bonds (e.g., professional but impersonal), or vice versa. While Be-positive communication may relate to cohesion, our study focuses specifically on SMM estimation.
+
+Question: Is higher SMM always better?
+Answer: Not necessarily. In efficiency- and safety-critical contexts (e.g., medical teams, disaster response), high SMM is desirable. However, in creativity-driven teams, excessive cognitive convergence may suppress diversity of thought. As discussed in our Broader Societal Implications (Paper Section 6.2), SMM should not be maximized uncritically but balanced against the need for innovation.
+(Related Appendix: Slide 23)
+
+----------------------------------------------------------------------
+5. Ethics and Privacy
+----------------------------------------------------------------------
+
+Question: What IRB approval did you obtain? How was consent handled?
+Answer: This study was approved by our institutional review board. Informed consent was obtained from all participants before the survey. All data were kept confidential and used only for research purposes. For the Slack data, we explained in the informed consent that analysts would not read the message content — only LLMs process the raw messages.
+(Reference: Paper Section 3.1)
+
+Question: You claim "privacy-preserving," but LLM providers (OpenAI, Google, Anthropic) still process the messages. How is that truly privacy-preserving?
+Answer: An important nuance. Our privacy-preserving claim is specifically that no human analyst reads the corporate messages. The current pipeline does send data to external APIs. In production deployment, organizations would need data processing agreements with LLM providers, or on-premise/private LLM deployments to ensure messages do not leave organizational infrastructure. We acknowledge this may not meet all organizational security requirements.
+
+Question: Could this system be misused for employee surveillance?
+Answer: We strongly emphasize that consent and transparency are essential. The output is a team-level SMM score, not individual-level monitoring. However, the underlying communication graphs contain individual communication patterns that could potentially be misused. Organizational policies must ensure the tool is used for team development purposes only, not individual surveillance.
+(Related Appendix: Slide 23)
+
+Question: How do you disclose GenAI usage?
+Answer: We describe this in Paper Section 9, "GenAI Usage Disclosure." We used GenAI to annotate communication categories of messages in the dataset. Additionally, we used GenAI to check English grammar and phrasing.
+
+----------------------------------------------------------------------
+6. Future Directions and Applications
+----------------------------------------------------------------------
+
+Question: What would it take to deploy this as a continuous monitoring tool in a real organization?
+Answer: Several components are needed: (1) API integration with the organization's IMS platform for real-time message ingestion; (2) on-premise or private LLM deployment for privacy compliance; (3) periodic graph construction and SMM estimation (e.g., monthly or quarterly); (4) a dashboard for managers to track SMM trends; and (5) organizational buy-in including employee consent and clear usage policies. Initial calibration would also require at least one round of questionnaire data to validate the model for that specific organizational context.
+
+Question: Could this approach be applied to other team constructs beyond SMM, such as team trust or psychological safety?
+Answer: This is a promising direction. Communication patterns likely reflect multiple team constructs simultaneously. For example, Be-positive and Be-negative ratios might relate to psychological safety, while Inform and Elicit-inform patterns could reflect information-sharing norms. The same pipeline — LLM annotation, graph construction, GNN estimation — could potentially be adapted, provided ground-truth questionnaire data and empirical analysis are available for each construct.
+
+Question: Can you go beyond estimation to recommend interventions?
+Answer: Currently our approach only estimates SMM without prescribing actions. However, communication graphs provide rich diagnostic information. For example, if Inform communication is low, managers might encourage information-sharing practices. If communication patterns are overly decentralized, establishing communication hub roles might help. Combining SMM estimation with interpretable graph analysis could form the basis for an actionable recommendation system.
+
+Question: Can this be applied to platforms other than Slack (Microsoft Teams, Discord, etc.)?
+Answer: The approach is platform-agnostic in principle. It requires sender, receiver, content, and timestamp for each message. However, communication conventions differ across platforms (e.g., Teams reactions, Discord thread structures), which may affect preprocessing and category distributions. Results may also vary with organizational culture and usage patterns, so validation in new environments is necessary.
+
+Question: What is the minimum communication history needed for estimation?
+Answer: We did not explicitly test this. Teams in our dataset spanned 74–1,007 days with 401–1,966 messages. Intuitively, sufficient messages in each category and stable user-to-user communication patterns are needed. The minimum required period varies with team size, communication frequency, and activity phase, making quantitative identification of this threshold an important future question.
+
+Question: Could this be applied to sports teams or other contexts where communication is primarily non-textual?
+Answer: Direct application is challenging, but partial application is possible if text-based communication exists (e.g., group chats or messaging apps). If non-verbal communication on the field (gestures, eye contact, positioning) is the primary reflection of SMM, text analysis alone would be insufficient. Our Conclusion (Paper Section 8) mentions sports as a potential application domain, but the prerequisite is the availability of communication logs.
+
+----------------------------------------------------------------------
+7. HCI-Specific Perspectives
+----------------------------------------------------------------------
+
+Question: What is the specific HCI contribution of this research?
+Answer: We contribute to HCI from three perspectives: (1) proposing a novel approach for continuously sensing a psychological construct (team cognition) from everyday interaction data, advancing the direction of ubiquitous/unobtrusive sensing; (2) leveraging widely adopted IMS tools so that team cognition assessment can be integrated without changing existing workflows; and (3) embedding privacy protection into the pipeline design, presenting a practical system design suitable for real organizational deployment.
+
+Question: Did you conduct a user study or evaluation with actual managers?
+Answer: Not in this study. The current focus is on demonstrating the technical feasibility of SMM estimation. Conducting a user study where actual managers and team leaders receive SMM estimation feedback and evaluate its usefulness and interpretability is a critical next step. Specifically, we need to examine how the ~13% estimation error affects managerial decision-making and what visualizations would be most effective.
+
+Question: How do you distinguish communication "quantity" from "quality"? More messages don't necessarily mean higher SMM, right?
+Answer: Exactly. In fact, Baseline 1 (message content only, no structure) produced the worst RMSE of 47.44. Our approach is effective because it distinguishes not just volume but (1) the type of communication (categories) and (2) who sends what to whom (dynamics). For instance, teams with more Elicit-inform messages (requesting information) tend to have lower SMM, while teams with more Inform messages (providing information) tend to have higher SMM. The structural characteristics of communication matter — volume alone cannot explain SMM.
+
+
+======================================================================
+Realistic Conference-Style Questions (with preambles for listening practice)
+======================================================================
+
+The following questions simulate how audience members actually speak at CHI Q&A sessions — with context-setting, hedging, multi-part questions, and conversational fillers.
+
+----------------------------------------------------------------------
+Data and Methodology
+----------------------------------------------------------------------
+
+Question: Thanks for the talk. So, I work on computational social science and I've done some work with Slack data myself. One thing I always struggle with is the receiver extraction — because on Slack, a lot of messages don't actually @-mention anyone, right? They're just posted in a channel and people read them. So I'm curious — how did you determine who the receiver of a message was, and what fraction of your messages actually had explicit receivers?
+Answer: Great question. We extracted receivers using @user_id mentions via regular expressions. Messages without explicit @mentions were excluded from the directed graph. We acknowledge this is a limitation — many messages are implicitly directed at the channel. The exact fraction of messages with explicit @mentions varies by team. Handling implicit receivers and broadcast mentions like @here is future work.
+(Reference: Paper Section 3.2.1)
+
+Question: I noticed that your data collection periods are really different across teams — some teams have less than three months and others have almost three years. I'm wondering, doesn't that create a pretty significant confound? Like, teams with longer histories have more data, more member turnover, and maybe their communication patterns aren't really comparable to a team that's only been around for a few months?
+Answer: Absolutely, this is a valid concern. Longer observation periods mean more accumulated messages but also more membership changes and project transitions. The message logs don't record when members join or leave. So communication traces may represent different team compositions at different times. We acknowledge this as a limitation. Future work should consider temporal segmentation, dynamic edge weighting, or explicit membership modeling.
+(Reference: Paper Section 7)
+
+Question: So this is a question about your embedding model. You used text-embedding-ada-002, which is, you know, a general-purpose model. But your messages are corporate Japanese Slack messages, which I imagine are pretty different from the training data. Did you consider using a Japanese-specific model, or maybe fine-tuning?
+Answer: We chose text-embedding-ada-002 for simplicity and convenience via Azure's OpenAI service. It does support Japanese, but you raise a fair point — corporate Slack messages contain domain jargon, abbreviations, and mixed Japanese-English text. We did not compare with Japanese-specific models or fine-tuned alternatives. This is a clear avenue for future improvement.
+
+Question: I really liked the work, but I have to ask the elephant-in-the-room question — you have 16 teams. That's a very small N for the kinds of claims you're making. How do you respond to someone who says, "Well, these correlations in Study 1 might just be noise," or "Your GNN results might not generalize"?
+Answer: You're right, and we take this seriously. The correlation analyses in Study 1 should be interpreted as exploratory. For the GNN evaluation, our systematic baseline design helps — by isolating the contributions of categories and dynamics step by step, we can draw more interpretable conclusions even with a small N. But ultimately, replication with a larger, more diverse sample is essential. We see this work as establishing the approach and the first evidence, not as definitive proof.
+
+Question: I'm curious about the questionnaire response rate. You mentioned that not all team members responded. In some teams, maybe only 3 out of 30 people answered. How confident can you be that those 3 people's responses represent the entire team's shared mental model?
+Answer: That's a very important concern. When only a small subset responds, the aggregated score may reflect individual perceptions rather than a true team-level construct. We use r_wg(j) to assess within-team agreement, which helps gauge reliability. Teams with high r_wg and more respondents give us more confidence. But for teams with very low response rates, the SMM score should indeed be interpreted with caution. Incorporating response rate or uncertainty into the model is future work.
+
+----------------------------------------------------------------------
+Communication Categories and Annotation
+----------------------------------------------------------------------
+
+Question: So I have a background in dialogue systems, and I'm familiar with the Carletta framework — it was designed for meeting conversations, which are synchronous and face-to-face. Slack is very different — it's asynchronous, text-based, and people write very differently than they speak. How confident are you that these categories, which were designed for spoken meetings, actually transfer well to Slack?
+Answer: That's a very thoughtful question. You're right that Slack communication differs from face-to-face meetings in important ways — it's asynchronous, allows editing, and lacks prosodic cues. We chose Carletta's framework because prior work has shown that IMS communication shares structural similarities with multi-party dialogue. We excluded categories like Stall and Fragment that are clearly speech-specific. The LLM validation results — alpha of 0.69 against human annotators — suggest the framework transfers reasonably well, but imperfect transfer is certainly a limitation.
+(Reference: Paper Section 2.4)
+
+Question: I found the Be-positive result really interesting — and honestly a bit hard to believe. You're saying that teams that are more positive with each other have lower shared mental models? I mean, couldn't there be a much simpler explanation, like maybe larger teams just have more social chit-chat and also happen to have lower SMM because they're bigger?
+Answer: Great point, and we discuss this in the paper. Team size is indeed a confound — larger teams tend to have more dispersed Be-positive communication and potentially lower SMM. However, our hypothesis goes beyond size. We observed that it's the distribution pattern of Be-positive messages that matters. Even controlling for team size conceptually, the highly dispersed nature of positive interactions — many members sending positive messages to many others — seems to be the key factor. We hypothesize that concentrated communication through a strong leader could maintain high SMM even in larger teams. But you're right that disentangling size from distribution is important future work.
+(Reference: Paper Section 4.3.2)
+
+Question: OK so you're using three different LLMs and taking a majority vote. But these models are all trained on similar data, right? They might share the same biases. Have you thought about whether the agreement among LLMs actually reflects accuracy, or just shared biases?
+Answer: That's a great point. The three LLMs — GPT-4o, Gemini Pro, and Claude 3.5 Sonnet — are from different providers with different training data and architectures, which provides some diversity. But you're right that they may share certain biases, especially for ambiguous cases. The comparison against human annotators (alpha = 0.69) provides an independent check. However, both the human annotators and the LLMs worked from the same guideline, so systematic biases in the guideline itself would not be detected. Using more diverse annotation approaches is worth exploring.
+(Related Appendix: Slide 21)
+
+Question: I have a follow-up on the annotation. You said you couldn't validate on the actual corporate data because of privacy. But then how do you know the annotations are correct on the data that actually matters? The auxiliary channel might have completely different communication patterns.
+Answer: You're absolutely right — this is one of our key limitations. The auxiliary channel was a separate workspace with explicit consent for human inspection. While it demonstrates that LLMs can apply the Carletta framework to Slack messages, the corporate data may contain more specialized terminology, implicit references, and context-dependent expressions that the auxiliary channel doesn't capture. We cannot fully guarantee transfer. This is why we emphasize developing domain-adapted models or anonymized validation as critical future work.
+(Reference: Paper Section 4.2)
+
+Question: You mentioned you gave the LLMs an English annotation manual to annotate Japanese messages. Doesn't that seem like a potential source of error? I mean, some dialogue acts might manifest very differently in Japanese culture — like, "Be-positive" in a Japanese corporate context might look very different from what the English manual describes.
+Answer: That's an excellent observation. Japanese corporate communication has distinctive features — indirect expressions, honorific language, and culturally specific forms of politeness and encouragement. "Be-positive" in a Japanese context might include very subtle expressions that the English-based manual doesn't explicitly describe. We relied on the LLMs' multilingual capabilities to bridge this gap, but there's certainly a risk of cultural mismatch. Developing a Japanese-adapted version of the annotation guideline would strengthen the approach.
+
+----------------------------------------------------------------------
+Model and Evaluation
+----------------------------------------------------------------------
+
+Question: So, I work on graph neural networks, and I have a technical question. In your expanded GCN, you aggregate outgoing and incoming messages separately using different weight matrices. But with only 16 teams, aren't you worried about having too many parameters? How many parameters does your model have, and did you do any regularization?
+Answer: Good question. We were indeed conscious of the parameter count given the small sample. The model uses a relatively simple architecture — the key extension is the separate aggregation for outgoing and incoming edges per category, which adds weight matrices proportional to the number of categories. We used standard techniques to manage complexity, but the paper does not report the exact parameter count. The leave-one-team-out evaluation helps assess generalization, and the fact that our model outperforms simpler baselines suggests it's not purely memorizing. But exploring regularization strategies and architecture simplification with more data is important.
+
+Question: I appreciate the systematic baseline comparison. But one thing that's missing for me is — have you considered using other graph-based methods that are designed for heterogeneous graphs? Like relational GCNs or heterogeneous graph transformers? Because your graph is essentially heterogeneous — you have different edge types for different categories.
+Answer: That's a really relevant point. Our category-wise approach is conceptually similar to relational GCNs, where different relation types have separate weight matrices. We construct separate graphs per category and process them independently before concatenation, which is one way to handle heterogeneity. Heterogeneous graph transformers could potentially learn cross-category attention, which might capture interactions between categories. With only 16 teams, simpler approaches seemed safer, but with larger datasets, exploring R-GCN, HGT, or similar architectures would be very interesting.
+
+Question: Your RMSE is 13.50, and you mentioned it corresponds to about 13% relative error. But I'm trying to understand what that means practically. Like, if a team has an SMM score of 100 and your model estimates 87 or 113, is that actually useful for a manager? Can they really make decisions based on that?
+Answer: That's a fair and practical question. A 13-point error on a scale where scores range from 83 to 122 is substantial — it could shift a team from appearing "average" to "high" or "low." For fine-grained decisions, this accuracy is insufficient. However, for detecting large-scale trends — like a significant SMM decline over several months — even this level of accuracy could be informative. We envision it as a screening tool: if the estimated SMM drops notably, it triggers a more detailed questionnaire-based assessment. It's a complement, not a replacement.
+
+Question: I noticed you used leave-one-team-out cross-validation. But given that your teams come from the same organization, aren't they likely more similar to each other than teams from different organizations? So your generalization estimate might be optimistic for cross-organizational deployment.
+Answer: Absolutely. All 16 teams are from the same R&D department at NTT DOCOMO, sharing organizational culture, communication norms, and tools. Leave-one-team-out within this population likely overestimates generalization to teams from different organizations or industries. Cross-organizational validation is critical before deployment elsewhere. The model may need retraining or fine-tuning for different organizational contexts.
+
+----------------------------------------------------------------------
+Conceptual and Theoretical
+----------------------------------------------------------------------
+
+Question: So I study team cognition, and I want to push back a little on the theoretical framing. SMM is really about shared knowledge structures — it's a cognitive construct. But what you're measuring through communication is behavior. How do you justify the leap from communication patterns to cognitive alignment? Isn't it possible that teams communicate a lot but still don't actually share the same mental model?
+Answer: That's a very thoughtful critique, and it gets at a fundamental assumption of our work. We don't claim that communication patterns are equivalent to shared cognition. Rather, we hypothesize — based on prior literature showing that communication is a critical antecedent of SMM — that certain patterns of communication are associated with, and potentially indicative of, SMM. Our model learns this association empirically. You're right that it's possible for teams to communicate extensively without developing true shared understanding. What we show is a statistical association, not a causal mechanism.
+
+Question: I have a question about the directionality of causation. You found that certain communication categories correlate with SMM. But isn't it equally plausible that high SMM causes different communication patterns, rather than communication causing high SMM? Like, maybe teams that already understand each other well just naturally communicate differently.
+Answer: Excellent point — the direction of causation is indeed ambiguous. Our study is cross-sectional, so we can only establish correlation, not causation. It's entirely plausible that the relationship is bidirectional: communication shapes SMM, but SMM also shapes communication. High-SMM teams might need less Elicit-inform because they already know what others know. Establishing causality would require longitudinal data with multiple SMM measurements and ideally experimental manipulation of communication patterns. This is an important theoretical question for future work.
+
+Question: You touched on this briefly, but I'm curious about the "perceived" versus "structural" SMM distinction. In the team cognition literature, there's been a lot of debate about whether self-report measures like 5-PSMMS actually capture the structure of shared knowledge, or just people's beliefs about it. How do you think about that in your work?
+Answer: You're right that this is a longstanding debate. The 5-PSMMS explicitly captures "perceived" shared understanding, which may not perfectly reflect the actual structure of shared knowledge. Structural measures — like concept mapping or card sorting — aim to directly assess knowledge overlap, but they're impractical for our setting. Our finding that r_wg correlates with SMM (r = 0.67) provides some reassurance that higher perceived SMM is associated with greater within-team consistency. But we acknowledge that perceived and structural SMM may diverge, and our approach is limited to the perceived dimension.
+(Reference: Paper Section 3.2.2)
+
+Question: This is more of a philosophical question, but — your approach essentially reduces rich, complex human communication to a small set of categories and graph edges. Do you worry that you're losing too much information? Like, the actual content of what people say, the humor, the shared references, the subtle cues that really build shared understanding?
+Answer: That's a profound question and a real tension in our work. By categorizing messages, we necessarily abstract away the rich content. The embedding vectors capture some semantic information, but the category labels lose nuance — an inspiring Inform message and a routine status update are treated the same. The humor, shared references, and implicit cues you mention are exactly the kind of signals that might distinguish superficial communication from deep shared understanding. We chose this abstraction level because it enables privacy preservation and scalability. But exploring richer representations — perhaps through embedding-level analysis within categories — could capture more of this nuance.
+
+Question: I'm curious about something you didn't really address in the talk — the role of team leadership. From your circos diagrams, it looked like high-SMM teams had more centralized communication. Doesn't that just mean that strong leaders create better shared mental models? And if so, isn't the communication pattern just a proxy for leadership quality?
+Answer: That's a really interesting interpretation. You're right that centralized communication often reflects strong leadership. Our hypothesis is that it's not just team size but the complexity and structure of communication that matters — a strong leader providing clear, directed communication to all members could maintain high SMM even in larger teams. Whether leadership quality is the underlying causal factor that both shapes communication patterns and influences SMM is an important question we can't definitively answer with our current data. Disentangling the effects of leadership, team size, and communication structure would require additional variables and a larger sample.
+
+----------------------------------------------------------------------
+Ethics, Privacy, and Deployment
+----------------------------------------------------------------------
+
+Question: So I work in an organization that's been thinking about deploying tools like this, and my concern is — even if you aggregate to team-level scores, the communication graphs you build contain very detailed individual-level information. Who sent how many messages to whom, what categories, and so on. How do you prevent that individual-level data from being accessed or misused?
+Answer: That's a critical practical concern. You're right that the intermediate representations — the communication graphs — contain detailed individual patterns even though the final output is team-level. In deployment, access controls would be essential: only aggregated SMM scores should be visible to managers, with the underlying graph data accessible only to authorized analysts or kept entirely automated. Technical measures like differential privacy on the graph structure, or only storing aggregated statistics rather than full graphs, could help. But the organizational governance framework is equally important — clear policies about who can access what, and for what purpose.
+
+Question: You mentioned that your pipeline is "privacy-preserving" because humans don't read the messages. But honestly, sending corporate messages to OpenAI, Google, and Anthropic's APIs — that's a pretty significant privacy issue in itself. Our legal team would never approve that. Have you thought about local deployment?
+Answer: Absolutely, and we completely understand that concern. Our "privacy-preserving" claim is specifically about human analysts not reading messages — we acknowledge the limitation of using external APIs. For real deployment, on-premise LLM deployment using open-source models like Llama or Mistral would address this. The annotation quality with such models would need to be validated separately, but the rapidly improving capabilities of open-source LLMs make this increasingly feasible. Some organizations also use private Azure or AWS deployments with data residency guarantees.
+
+Question: I'm thinking about this from a worker's perspective. If my employer started analyzing my Slack messages — even through LLMs — to estimate some team cognition score, I'd feel pretty uncomfortable. Even if they say it's anonymous and aggregated. How do you think about employee acceptance and trust?
+Answer: That's a really important perspective, and we take it seriously. Employee acceptance is essential for any deployment. In our study, we obtained informed consent, and participants were told that analysts would not read their messages. But you're right that "LLMs read your messages" might not feel much better to some employees. Building trust requires transparency about exactly what data is collected, how it's processed, what's stored, and who sees what. Giving employees the ability to opt out, or showing them what the system actually produces (anonymized team-level scores), could help. We believe this tool should be deployed collaboratively — as something that helps teams, not something done to teams.
+
+Question: Have you thought about what happens when SMM monitoring becomes a KPI? Like, if management starts saying "your team's SMM score dropped, you need to fix it." That seems like it could create a lot of pressure and potentially toxic dynamics.
+Answer: This is exactly the kind of misuse we want to prevent. If SMM becomes a performance metric that teams are held accountable for, it could lead to gaming behavior, stress, or surface-level communication changes that don't reflect genuine shared understanding. We envision SMM estimation as a diagnostic tool for organizational development, not a scorecard. Managers should use it to identify teams that might benefit from support — like team-building activities or communication interventions — not to punish teams with low scores. Clear usage guidelines at the organizational level are essential.
+
+----------------------------------------------------------------------
+Comparison and Related Work
+----------------------------------------------------------------------
+
+Question: Have you looked at other approaches to measuring team dynamics from digital traces? For example, sociometric badges, email network analysis, or activity-based sensing? How does your approach compare in terms of the richness of information versus the intrusiveness?
+Answer: Great question. Sociometric badges capture face-to-face interaction patterns, body language, and speech dynamics — very rich but highly intrusive and expensive to deploy at scale. Email network analysis is less intrusive but typically only captures sender-receiver pairs without content categorization. Activity-based sensing (keystroke dynamics, application usage) captures individual behavior but not team interaction. Our approach sits in a middle ground: we capture both the structure and the functional category of communication from existing IMS data, with no additional hardware or behavioral change required. The trade-off is that we miss non-digital communication.
+
+Question: I'm wondering about the relationship to computational linguistics work on dialogue act classification. There's been a lot of work on automatic dialogue act tagging using supervised models. Why use LLMs with zero-shot or few-shot prompting instead of training a dedicated classifier?
+Answer: That's a good alternative to consider. Training a supervised dialogue act classifier would require labeled training data in our specific domain — corporate Japanese Slack messages. Creating such training data would require human annotators to read corporate messages, which our privacy constraints prohibit. LLMs with the annotation manual provide a way to get category labels without domain-specific training data and without human exposure to corporate messages. If privacy-compliant labeled data were available, a dedicated classifier could indeed be more efficient and potentially more accurate.
+
+Question: So there's been work in CSCW on using Slack data to understand team collaboration — for example, Lin et al. studied how developers use Slack, and Wang et al. analyzed enterprise Slack channels. How does your work differ from or build on that line of research?
+Answer: Those studies primarily provide descriptive analyses of how teams use Slack — what types of messages are sent, communication patterns, and channel purposes. Our work differs in that we go beyond description to prediction: we use communication data to estimate a specific psychological construct, SMM. We also introduce the privacy-preserving LLM annotation pipeline and the category-wise directed GNN architecture. Our work builds on the insight from those studies that Slack channels contain rich signals about team dynamics, but we operationalize that insight into a quantitative estimation framework.
+(Reference: Paper Section 2.3)
+
+----------------------------------------------------------------------
+Surprising / Provocative Questions
+----------------------------------------------------------------------
+
+Question: I'll be honest — I'm a bit skeptical. You're essentially saying that by reading people's Slack messages with AI, you can tell how well a team thinks together. Doesn't that seem like a stretch? Communication is just one small window into cognition.
+Answer: I appreciate the skepticism, and you're right to challenge this. We don't claim to directly measure cognition — what we show is that communication patterns, specifically their categories and structural dynamics, are statistically associated with perceived SMM as measured by a validated questionnaire. Communication is indeed one window, but prior research has established it as a critical antecedent and reflection of SMM. Our 13% relative error also honestly shows we're not capturing everything. We see this as a first step — a proof of concept that this signal exists and can be extracted — not as a definitive measure of team cognition.
+
+Question: So your model performs best when you combine categories and dynamics. But isn't the real takeaway just that "Inform is good and Elicit-inform is bad"? Do you actually need the complex GNN, or would a simple regression on category ratios do almost as well?
+Answer: That's a sharp question. Actually, Baseline 3 — which uses category-wise undirected graphs without our directed dynamics — already achieves 16.58. Our full model achieves 13.50, a meaningful improvement. The category ratios alone do capture a lot of the signal. But the directed dynamics contribute additional information about the structure of communication, which helps distinguish teams that have similar category ratios but different interaction patterns. Whether a simpler regression on category ratios plus a few graph statistics could approximate our results is an interesting empirical question we haven't tested.
+
+Question: What if your entire approach is just picking up on team size? Larger teams have lower SMM, more dispersed communication, and different category distributions. Have you controlled for team size?
+Answer: That's a critical question. Team size is indeed correlated with several of our features and with SMM. We did not explicitly control for team size as a covariate in our model, which is a limitation. However, our GNN operates at the user level within each team's graph — it processes the local communication structure around each user, not just team-level aggregate statistics. This means it can potentially distinguish between large teams with centralized communication (which might have higher SMM) and large teams with dispersed communication (lower SMM). But a systematic ablation controlling for team size would strengthen our claims.
+
+Question: I notice you didn't discuss the computational cost at all. If I wanted to run this on a large organization with hundreds of teams and millions of messages, how feasible is that? Especially the LLM annotation step — that seems expensive.
+Answer: Good practical question. The LLM annotation step is indeed the most expensive component — processing millions of messages through three commercial LLMs would incur significant API costs. However, this can be optimized: messages could be batched, cheaper or local models could be used for initial filtering, and annotation could be done incrementally as new messages arrive. The GNN computation itself is relatively lightweight once the graphs are constructed. For large-scale deployment, a more cost-effective approach would use fine-tuned smaller models or open-source LLMs for annotation, reserving expensive models for validation or edge cases.
+
+Question: This is maybe an unfair question, but — if you could do this study again from scratch with unlimited resources, what would you do differently?
+Answer: Not unfair at all. First, I'd collect data from multiple organizations across different industries and cultures to address the generalizability limitation. Second, I'd administer the questionnaire at multiple time points to enable temporal modeling. Third, I'd invest in creating a Japanese-adapted version of the annotation guideline and validate it more rigorously. Fourth, I'd include additional team-level measurements — leadership style, task complexity, team tenure — to control for confounds. And fifth, I'd conduct a longitudinal deployment study where managers actually receive SMM estimates and we can measure whether it leads to better team outcomes. That's the real test of practical value.

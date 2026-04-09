@@ -207,44 +207,140 @@
       <itunes:episode>24</itunes:episode>
     </item>
     <item>
-      <title>[想定QA]</title>
+      <title>[想定QA] パート 1</title>
       <description>想定QA.txt の読み上げ音声</description>
-      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/想定QA/audio.mp3" length="2157909" type="audio/mpeg" />
-      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/想定QA/audio.mp3</guid>
-      <pubDate>Sun, 05 Apr 2026 11:04:27 +0000</pubDate>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_1.mp3" length="2702757" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_1.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 05:25:14 +0000</pubDate>
       <itunes:episode>25</itunes:episode>
     </item>
     <item>
-      <title>[qa_pairs] パート 1</title>
-      <description>qa_pairs.txt の読み上げ音声</description>
-      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/qa_pairs/part_1.mp3" length="3086685" type="audio/mpeg" />
-      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/qa_pairs/part_1.mp3</guid>
-      <pubDate>Sun, 05 Apr 2026 11:57:52 +0000</pubDate>
+      <title>[想定QA] パート 2</title>
+      <description>想定QA.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_2.mp3" length="2974557" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_2.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 05:25:14 +0000</pubDate>
       <itunes:episode>26</itunes:episode>
     </item>
     <item>
-      <title>[qa_pairs] パート 2</title>
-      <description>qa_pairs.txt の読み上げ音声</description>
-      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/qa_pairs/part_2.mp3" length="2553741" type="audio/mpeg" />
-      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/qa_pairs/part_2.mp3</guid>
-      <pubDate>Sun, 05 Apr 2026 11:57:52 +0000</pubDate>
+      <title>[想定QA] パート 3</title>
+      <description>想定QA.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_3.mp3" length="2695581" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_3.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 05:25:14 +0000</pubDate>
       <itunes:episode>27</itunes:episode>
     </item>
     <item>
-      <title>[qa_pairs] パート 3</title>
-      <description>qa_pairs.txt の読み上げ音声</description>
-      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/qa_pairs/part_3.mp3" length="2737533" type="audio/mpeg" />
-      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/qa_pairs/part_3.mp3</guid>
-      <pubDate>Sun, 05 Apr 2026 11:57:52 +0000</pubDate>
+      <title>[想定QA] パート 4</title>
+      <description>想定QA.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_4.mp3" length="2888349" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_4.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 05:25:14 +0000</pubDate>
       <itunes:episode>28</itunes:episode>
     </item>
     <item>
-      <title>[qa_pairs] パート 4</title>
-      <description>qa_pairs.txt の読み上げ音声</description>
-      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/qa_pairs/part_4.mp3" length="2620029" type="audio/mpeg" />
-      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/qa_pairs/part_4.mp3</guid>
-      <pubDate>Sun, 05 Apr 2026 11:57:52 +0000</pubDate>
+      <title>[想定QA] パート 5</title>
+      <description>想定QA.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_5.mp3" length="2580669" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_5.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 05:25:14 +0000</pubDate>
       <itunes:episode>29</itunes:episode>
+    </item>
+    <item>
+      <title>[想定QA] パート 6</title>
+      <description>想定QA.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_6.mp3" length="2322405" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_6.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 05:25:14 +0000</pubDate>
+      <itunes:episode>30</itunes:episode>
+    </item>
+    <item>
+      <title>[想定QA] パート 7</title>
+      <description>想定QA.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_7.mp3" length="2261061" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_7.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 05:25:14 +0000</pubDate>
+      <itunes:episode>31</itunes:episode>
+    </item>
+    <item>
+      <title>[想定QA] パート 8</title>
+      <description>想定QA.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_8.mp3" length="2629029" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_8.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 05:25:14 +0000</pubDate>
+      <itunes:episode>32</itunes:episode>
+    </item>
+    <item>
+      <title>[想定QA] パート 9</title>
+      <description>想定QA.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_9.mp3" length="2271165" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_9.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 05:25:14 +0000</pubDate>
+      <itunes:episode>33</itunes:episode>
+    </item>
+    <item>
+      <title>[想定QA] パート 10</title>
+      <description>想定QA.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_10.mp3" length="2395797" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_10.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 05:25:14 +0000</pubDate>
+      <itunes:episode>34</itunes:episode>
+    </item>
+    <item>
+      <title>[想定QA] パート 11</title>
+      <description>想定QA.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_11.mp3" length="2684061" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_11.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 05:25:14 +0000</pubDate>
+      <itunes:episode>35</itunes:episode>
+    </item>
+    <item>
+      <title>[想定QA] パート 12</title>
+      <description>想定QA.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_12.mp3" length="2060877" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/想定QA_2/part_12.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 05:25:14 +0000</pubDate>
+      <itunes:episode>36</itunes:episode>
+    </item>
+    <item>
+      <title>[Presentation_Script] パート 1</title>
+      <description>Presentation_Script.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/Presentation_Script/part_1.mp3" length="2758437" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/Presentation_Script/part_1.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 06:02:59 +0000</pubDate>
+      <itunes:episode>37</itunes:episode>
+    </item>
+    <item>
+      <title>[Presentation_Script] パート 2</title>
+      <description>Presentation_Script.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/Presentation_Script/part_2.mp3" length="2828397" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/Presentation_Script/part_2.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 06:02:59 +0000</pubDate>
+      <itunes:episode>38</itunes:episode>
+    </item>
+    <item>
+      <title>[Presentation_Script] パート 3</title>
+      <description>Presentation_Script.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/Presentation_Script/part_3.mp3" length="2825997" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/Presentation_Script/part_3.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 06:02:59 +0000</pubDate>
+      <itunes:episode>39</itunes:episode>
+    </item>
+    <item>
+      <title>[Presentation_Script] パート 4</title>
+      <description>Presentation_Script.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/Presentation_Script/part_4.mp3" length="2723613" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/Presentation_Script/part_4.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 06:02:59 +0000</pubDate>
+      <itunes:episode>40</itunes:episode>
+    </item>
+    <item>
+      <title>[Presentation_Script] パート 5</title>
+      <description>Presentation_Script.txt の読み上げ音声</description>
+      <enclosure url="https://setten-QB.github.io/audio_paper/episodes/Presentation_Script/part_5.mp3" length="809661" type="audio/mpeg" />
+      <guid isPermaLink="true">https://setten-QB.github.io/audio_paper/episodes/Presentation_Script/part_5.mp3</guid>
+      <pubDate>Thu, 09 Apr 2026 06:02:59 +0000</pubDate>
+      <itunes:episode>41</itunes:episode>
     </item>
   </channel>
 </rss>

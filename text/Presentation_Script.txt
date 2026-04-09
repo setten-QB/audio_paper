@@ -1,0 +1,292 @@
+Presentation Script: Estimating Shared Mental Models via Communication-Categorized Directed Graphs
+
+**CHI 2026, Barcelona, Spain**
+**Estimated duration: ~12 minutes**
+
+---
+
+## Slide 1: Title Slide (~30 seconds)
+
+Hello everyone. Thank you for coming to this talk. My name is Hiroaki Tanaka from NTT DOCOMO and Nara Institute of Science and Technology. Today, I will present our work on "Estimating Shared Mental Models via Communication-Categorized Directed Graphs."
+
+---
+
+## Slide 2: Background and Issue (~90 seconds)
+
+Let me start with the background.
+
+A Shared Mental Model, or SMM, refers to the knowledge structures held by members of a team that enable them to coordinate their actions and adapt their behavior to the demands of their tasks and other team members.
+For example, Suppose a situation that manager tells “Let’s use NTT DOCOMO INC’s corporate logo.
+NTT DOCOMO is the name of my company.
+When the mental model is not share, the members cannot image the using corporate logo. On the other hand, when the mental model is shared, everyone can recognize it.
+
+
+Why does this matter? Research has shown that high-SMM teams can maintain strong performance even with minimal communication, and that SMM correlates positively with team performance across many studies.
+
+Now, how do we currently measure SMM? The popular methodology relies on questionnaire surveys or interviews conducted by professionals. However, these approaches have serious limitations. Frequent questionnaire surveys place a heavy time burden on team members, and the experts conducting the interviews are not available in many organizations. As a result, we cannot continuously grasp how SMM changes over time.
+
+So our key question is: can we estimate SMM continuously and non-intrusively from data that already exists in organizations? Specifically, we focus on Instant Messaging Systems like Slack, which are widely used in corporate settings.
+
+---
+
+## Slide 3: Overview of Proposed Approach and Key Contributions (~60 seconds)
+
+The overall flow is: we categorize messages by LLM consensus, construct category-wise communication networks, apply our proposed graph neural network, and then estimate SMM.
+When a decline is detected, managers can take action, such as team building activities.
+
+This pipeline can preserve privacy because any human does not access the raw message content.
+Moreover, we through empirical analysis, we identified which communication categories and interaction patterns are actually associated with SMM. This is important because not all communication is equally relevant.
+And then, we proposed a novel GNN-based estimation model that incorporates communication categories and directed communication dynamics, outperforming multiple baselines.
+
+
+---
+
+## Slide 4: Related Work of Shared Mental Model (~60 seconds)
+
+Let me briefly cover the related work on SMM.
+
+The concept of SMM emerged from research on team cognition. SMM is defined as "knowledge structures held by members of a team that enable them to form accurate explanations and expectations for the task." Many past studies have pointed out the importance of SMM for team performance.
+
+Traditionally, SMM has been measured through diverse methods, including interviews, card sorting, and questionnaires. This diversity itself has been a significant contributor to inconsistency across studies.
+
+A notable advancement is the Five-factor Perceived Shared Mental Model Scale, or 5-PSMMS, which offers a unified framework for assessing SMM across diverse team contexts. We adopt 5-PSMMS in our study to ensure robustness and comparability.
+
+Our proposal takes the next step: making the questionnaire survey essentially unnecessary for continuous monitoring, by estimating SMM directly from IMS communication data.
+
+---
+
+## Slide 5: Related Work of Communication Category (~45 seconds)
+
+Regarding communication categories, while numerous methods for categorizing communication exist, no classification system has been explicitly designed for IMS contexts.
+
+However, IMS communication often shares similarities with multi-party dialogue structures. Therefore, we leverage the dialogue act tagging framework proposed by Carletta and colleagues, which was originally developed for the AMI Meeting Corpus.
+
+As you can see from this illustration, conversations on Slack resemble multi-party dialogues in many ways. Messages can be categorized as Inform, Suggest, Backchannel, and so on. We selected a subset of categories from the original framework that are applicable to text-based IMS communication.
+
+---
+
+## Slide 6: Dataset Statistics (~15 seconds)
+
+Now let me describe our dataset. We collected two types of data: Slack communication data and questionnaire responses from 16 teams in an R&D department.
+
+---
+
+## Slide 7: Slack Data (~30 seconds)
+
+Here are the statistics of the Slack data. We have 16 teams with a total of 286 users and over 17,000 messages. The team sizes range from 3 to 32 members, with an average of about 18. The number of messages per team varies substantially, from about 400 to nearly 2,000. The data spans periods from 74 days to over 1,000 days.
+
+Each message contains the sender ID, receiver information extracted through @-mentions, the content, and the timestamp.
+
+---
+
+## Slide 8: Questionnaire Data (~45 seconds)
+
+For the ground-truth SMM scores, we administered the 5-PSMMS questionnaire to team members. This questionnaire covers five dimensions: equipment, execution, interaction, composition, and temporal.
+
+We consider the average sum of users' questionnaire scores as the team's SMM. Not all team members responded, so the scores are based on those who did.
+
+To assess the reliability of these team-level scores, we computed the within-team agreement index r_wg for each dimension. The values vary substantially across teams. Importantly, we observed a positive correlation of 0.67 between the mean r_wg values and team-level SMM scores, suggesting that teams with higher perceived SMM tend to have more convergent responses.
+
+---
+
+## Slide 9: Overview and Essence of Proposed Approach (~20 seconds)
+
+Now, moving to our main studies. A key insight of our approach is that only a few categories of communication are actually relevant for estimating SMM. Let me explain how we arrived at this finding.
+
+---
+
+## Slide 10: Study 1 - Extracting Essential Features (1/2) (~75 seconds)
+
+In Study 1, we analyzed the correlation between each communication category and SMM.
+
+These scatter plots show the relationship between the ratio of messages in each category and the team's SMM score. 
+Let me highlight the key findings.
+
+For Elicit-inform, we found a negative correlation of minus 0.35. 
+After excluding data points concentrated near zero, this becomes even stronger at minus 0.69. 
+This suggests that frequent requests for information are inversely related to SMM.
+
+For Be-positive, we also found a negative correlation of minus 0.46.
+This was somewhat surprising and we will discuss this further.
+
+For Inform, we observed a positive correlation of 0.24, indicating that information-sharing communication is associated with higher SMM.
+
+Other categories such as Suggest, Elicit-offer-or-suggestion, Comment-about-understanding, and Be-negative showed weak or inconsistent correlations.
+
+Based on this analysis, we selected three categories as significant for SMM estimation: Inform, Elicit-inform, and Be-positive. 
+We also excluded Be-negative due to its relationship with SMM, because of a lower correlation after removing near-zero data points.
+
+
+---
+
+## Slide 11: Study 1 - Extracting Essential Features (2/2) (~60 seconds)
+
+Beyond communication categories, we also examined communication dynamics. These chord diagrams visualize the Be-positive communication patterns within teams.
+
+Looking at the top row, teams with high SMM scores, such as Team 5 with a score of 122 and Team 4 with 116, show more concentrated, centralized communication patterns. In contrast, the bottom row shows teams with lower SMM, such as Team 1 with 86 and Team 10 with 83, which exhibit more diffuse and decentralized interaction patterns.
+
+One might think this is simply because larger teams have lower SMM, which is partly true. However, we hypothesize that it is not just team size, but the complexity of communication that matters. Even in larger teams, if there is strong, centralized leadership with clear communication pathways, SMM could remain high.
+
+This observation motivates us to incorporate communication dynamics into our SMM estimation model.
+
+This is merely a hypothesis, and we did not attempt to perform a quantitative analysis of this figure in this study.
+
+---
+
+## Slide 12: Study 2 - Approach to Estimating SMM (~15 seconds)
+
+Based on these findings from Study 1, we developed our approach in Study 2. The proposed approach consists of two phases: first, constructing communication-category-wise directed graphs, and then estimating SMM using a Graph Convolutional Network. Let me explain the details.
+
+---
+
+## Slide 13: Study 2 - Proposing Expanded Graph Convolutional Network (~60 seconds)
+
+The key novelty of our model is the expanded Graph Convolutional Network that handles directed, weighted, and category-wise communication networks.
+
+On the left, you see the traditional GCN approach, which uses an undirected, weightless graph. This treats communication symmetrically and does not distinguish between different types of messages.
+
+On the right is our proposed approach. We make three important extensions. First, we use directed graphs to capture who says what to whom. Second, we use weighted edges to represent how much communication occurs between pairs of users. Third, we construct separate graphs for each communication category.
+
+This means our model can capture not only what is being said and how much, but also what each person receives, preserving the asymmetric nature of real communication.
+
+---
+
+## Slide 14: Study 2 - Details of Proposed GCN (~30 seconds)
+
+Here are the technical details of the proposed model. The model initializes node features from message embeddings, then applies the expanded graph convolutional layers that separately aggregate information from outgoing and incoming messages for each communication category. Finally, it concatenates the representations across all categories and passes them through an MLP to predict each user's SMM contribution. I will not go into all the mathematical details here, but the key point is that the model distinguishes between messages sent and received, weighted by their frequency, and communication category.
+
+
+---
+
+## Slide 15: Evaluation Result (~75 seconds)
+
+Here are our evaluation results, compared against four baselines.
+
+Baseline 1 uses only message embeddings with LightGBM, achieving an RMSE of 47.44. This is the simplest approach without considering communication structure.
+
+Baseline 2 incorporates all messages into an undirected GCN without distinguishing categories, achieving 21.08.
+
+Baseline 3 adds category awareness by constructing separate undirected graphs for each communication category, improving to 16.58. This confirms that communication categories are significant.
+
+Baseline 4 uses our proposed GCN to model communication dynamics but without category distinctions, achieving 21.00, which is similar to Baseline 2. This shows that communication dynamics alone do not significantly improve estimation.
+
+Our proposed approach, which combines both communication categories and communication dynamics, achieves the best RMSE of 13.50.
+
+The key takeaway is: communication categories are individually important for estimating SMM. Communication dynamics, on their own, do not significantly improve performance. However, when combined with communication categories, they enhance the model substantially. This supports our hypothesis that a holistic approach leveraging multiple facets of communication is most effective.
+
+---
+
+## Slide 16: Limitation (~45 seconds)
+
+Let me discuss the limitations of this work.
+
+First, our dataset is from a single corporate context at NTT DOCOMO. Different organizational cultures may yield different results, so we must be careful not to overgeneralize our findings. Future work should examine a more diverse set of organizations and communication platforms.
+
+Second, the quality of LLM-based annotations remains debatable. Although we employed state-of-the-art large language models to categorize communication acts, annotation quality may still be imperfect, as manual verification was not possible due to privacy concerns. Developing domain-adapted models or anonymized human validation could improve reliability.
+
+Third, our model estimates SMM from a snapshot of communication data at a single point in time. However, communication patterns change from day to day. If the model can capture these temporal changes, SMM estimation performance could be further improved.
+
+---
+
+## Slide 17: Conclusion: Key Contributions (~45 seconds)
+
+Let me summarize our key contributions.
+
+First, we developed a privacy-preserving annotation pipeline. Our LLM-based annotation categorizes messages into communicative acts, and importantly, this pipeline does not require any human to access the raw message content.
+
+Second, through empirical analysis, we identified which communication categories and interaction patterns are associated with SMM. We found that communication categories are significant for SMM estimation, and that dynamics alone are insufficient — but when combined with categories, they improve accuracy.
+
+Third, we proposed a novel GNN-based estimation model. Our category-wise directed GCN outperforms all baselines, achieving an RMSE of 13.50, which corresponds to approximately 13% relative error.
+
+Thank you for your attention. I am happy to take any questions.
+
+---
+
+**Total estimated time: ~12 minutes**
+
+---
+---
+
+# Appendix Slides (For Q&A Reference)
+
+The following slides are included in the Appendix section and can be shown during Q&A when relevant questions arise.
+
+---
+
+## Slide 18: 5-PSMMS Questionnaire Items
+
+*(Use when asked: "What questionnaire did you use?" or "What does the 5-PSMMS measure?")*
+
+The 5-PSMMS, or Five-factor Perceived Shared Mental Model Scale, measures perceived shared understanding across five dimensions. All items share the stem: "Team members have a similar understanding about..."
+
+The five dimensions are Equipment, Execution, Interaction, Composition, and Temporal, each with four items. For example, the Equipment dimension asks about understanding of tools and technology, while the Interaction dimension asks about communication methods.
+
+In our study, all items were translated to Japanese. We used the average sum of each user's responses as the team's SMM score.
+
+---
+
+## Slide 19: SMM and Within-Team Agreement
+
+*(Use when asked: "How reliable are the SMM scores?" or "What is r_wg?" or "How do you validate the questionnaire data?")*
+
+This slide shows the relationship between SMM and within-team agreement. We used the within-team agreement index r_wg(j) to measure the convergence of individual responses within each team.
+
+The scatter plot shows that SMM and mean r_wg(j) exhibit a positive correlation with a coefficient of 0.67. This indicates that teams whose members provide more convergent responses tend to report higher levels of perceived shared mental models.
+
+This is important because SMM is a collective team concept. If team members disagree widely on their responses, the aggregated SMM score may not accurately reflect the true state of shared cognition within the team.
+
+---
+
+## Slide 20: LLM-Based Annotation Pipeline
+
+*(Use when asked: "How did you annotate messages?" or "Why use LLMs instead of human annotators?" or "How does the privacy-preserving aspect work?")*
+
+Our annotation pipeline uses three LLMs — GPT-4o, Gemini Pro, and Claude 3.5 Sonnet — to independently categorize each message. The final label is determined by majority vote.
+
+The procedure is: the LLMs read Carletta et al.'s annotation manual, and then each LLM independently assigns a category to each message. We adopted the state-of-the-art models available at the time of the experiment.
+
+Critically, the human analysts never read the original message content. This is our privacy-preserving mechanism: only the LLMs process the corporate messages, and only the resulting category labels are used for analysis.
+
+---
+
+## Slide 21: LLM Annotation Validation
+
+*(Use when asked: "How reliable are the LLM annotations?" or "Did you validate against humans?" or "What is Krippendorff's alpha?")*
+
+We conducted three types of validation to confirm the practical reliability of LLM annotations. Krippendorff's alpha close to 1 reflects low observed disagreement relative to chance, values near 0 indicate chance-level agreement, and negative values indicate systematic disagreement.
+
+First, two trained human annotators independently labeled 150 messages from an auxiliary Slack channel, achieving alpha of 0.75, indicating adequate inter-annotator agreement.
+
+Second, we compared the LLM ensemble predictions against these human annotations, obtaining alpha of 0.69. While this is lower than human-human agreement, the reduced disagreement relative to chance confirms meaningful alignment.
+
+Third, we assessed internal consistency through bootstrap analysis with 100 resampled datasets, yielding an average alpha of 0.87. This high stability indicates that the LLM ensemble produces consistent labeling across different samples.
+
+Note that we could not directly validate on the original corporate corpus due to privacy constraints, which is why we used the separate auxiliary channel.
+
+---
+
+## Slide 22: Possible Applications
+
+*(Use when asked: "Where else can this approach be applied?" or "What are the practical implications?")*
+
+Our approach can be applied to various domains beyond corporate settings.
+
+In **education**, analyzing communication among students and between teachers and students can provide insights into whether shared understanding has been formed around specific topics covered in class. When SMM is estimated to be low, communication diagrams can reveal isolated students or insufficient teacher–student interactions.
+
+In **medical teams**, establishing a shared understanding of the patient's condition and treatment plan is critical for delivering appropriate care. By extracting patient-related communication and applying our approach, we can continuously monitor SMM within the medical team and detect discrepancies at an early stage.
+
+In **disaster response**, multiple squads at different sites must maintain shared situational awareness across the entire deployment team. We can estimate team-wide SMM in real time by modeling inter-squad communication as a network.
+
+---
+
+## Slide 23: Broader Societal Implications
+
+*(Use when asked: "What about privacy concerns?" or "Are there ethical issues?" or "Could this be misused?")*
+
+While our approach is promising, responsible deployment requires addressing privacy, equity, and contextual interpretation.
+
+Regarding **privacy and ethics**, analyzing communication data for SMM estimation may risk excessive monitoring or surveillance of employees, students, or professionals. Careful anonymization, aggregation, and consent procedures are therefore essential.
+
+Regarding **context-dependent value**, high SMM alignment is desirable for efficiency and safety, but in creativity-driven teams, excessive convergence may suppress diversity of thought. SMM should not be maximized uncritically but balanced against the need for innovation.
+
+Regarding **equity of access**, if SMM monitoring tools become organizational standards, unequal access across industries or countries could exacerbate disparities in performance and safety. The goal is to provide actionable insights, not to replace human judgment or enforce conformity.

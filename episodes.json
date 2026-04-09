@@ -168,38 +168,122 @@
     "pub_date": "Mon, 23 Mar 2026 23:56:57 +0000"
   },
   {
-    "title": "[想定QA]",
+    "title": "[想定QA] パート 1",
     "description": "想定QA.txt の読み上げ音声",
-    "path": "episodes/想定QA/audio.mp3",
-    "length": "2157909",
-    "pub_date": "Sun, 05 Apr 2026 11:04:27 +0000"
+    "path": "episodes/想定QA_2/part_1.mp3",
+    "length": "2702757",
+    "pub_date": "Thu, 09 Apr 2026 05:25:14 +0000"
   },
   {
-    "title": "[qa_pairs] パート 1",
-    "description": "qa_pairs.txt の読み上げ音声",
-    "path": "episodes/qa_pairs/part_1.mp3",
-    "length": "3086685",
-    "pub_date": "Sun, 05 Apr 2026 11:57:52 +0000"
+    "title": "[想定QA] パート 2",
+    "description": "想定QA.txt の読み上げ音声",
+    "path": "episodes/想定QA_2/part_2.mp3",
+    "length": "2974557",
+    "pub_date": "Thu, 09 Apr 2026 05:25:14 +0000"
   },
   {
-    "title": "[qa_pairs] パート 2",
-    "description": "qa_pairs.txt の読み上げ音声",
-    "path": "episodes/qa_pairs/part_2.mp3",
-    "length": "2553741",
-    "pub_date": "Sun, 05 Apr 2026 11:57:52 +0000"
+    "title": "[想定QA] パート 3",
+    "description": "想定QA.txt の読み上げ音声",
+    "path": "episodes/想定QA_2/part_3.mp3",
+    "length": "2695581",
+    "pub_date": "Thu, 09 Apr 2026 05:25:14 +0000"
   },
   {
-    "title": "[qa_pairs] パート 3",
-    "description": "qa_pairs.txt の読み上げ音声",
-    "path": "episodes/qa_pairs/part_3.mp3",
-    "length": "2737533",
-    "pub_date": "Sun, 05 Apr 2026 11:57:52 +0000"
+    "title": "[想定QA] パート 4",
+    "description": "想定QA.txt の読み上げ音声",
+    "path": "episodes/想定QA_2/part_4.mp3",
+    "length": "2888349",
+    "pub_date": "Thu, 09 Apr 2026 05:25:14 +0000"
   },
   {
-    "title": "[qa_pairs] パート 4",
-    "description": "qa_pairs.txt の読み上げ音声",
-    "path": "episodes/qa_pairs/part_4.mp3",
-    "length": "2620029",
-    "pub_date": "Sun, 05 Apr 2026 11:57:52 +0000"
+    "title": "[想定QA] パート 5",
+    "description": "想定QA.txt の読み上げ音声",
+    "path": "episodes/想定QA_2/part_5.mp3",
+    "length": "2580669",
+    "pub_date": "Thu, 09 Apr 2026 05:25:14 +0000"
+  },
+  {
+    "title": "[想定QA] パート 6",
+    "description": "想定QA.txt の読み上げ音声",
+    "path": "episodes/想定QA_2/part_6.mp3",
+    "length": "2322405",
+    "pub_date": "Thu, 09 Apr 2026 05:25:14 +0000"
+  },
+  {
+    "title": "[想定QA] パート 7",
+    "description": "想定QA.txt の読み上げ音声",
+    "path": "episodes/想定QA_2/part_7.mp3",
+    "length": "2261061",
+    "pub_date": "Thu, 09 Apr 2026 05:25:14 +0000"
+  },
+  {
+    "title": "[想定QA] パート 8",
+    "description": "想定QA.txt の読み上げ音声",
+    "path": "episodes/想定QA_2/part_8.mp3",
+    "length": "2629029",
+    "pub_date": "Thu, 09 Apr 2026 05:25:14 +0000"
+  },
+  {
+    "title": "[想定QA] パート 9",
+    "description": "想定QA.txt の読み上げ音声",
+    "path": "episodes/想定QA_2/part_9.mp3",
+    "length": "2271165",
+    "pub_date": "Thu, 09 Apr 2026 05:25:14 +0000"
+  },
+  {
+    "title": "[想定QA] パート 10",
+    "description": "想定QA.txt の読み上げ音声",
+    "path": "episodes/想定QA_2/part_10.mp3",
+    "length": "2395797",
+    "pub_date": "Thu, 09 Apr 2026 05:25:14 +0000"
+  },
+  {
+    "title": "[想定QA] パート 11",
+    "description": "想定QA.txt の読み上げ音声",
+    "path": "episodes/想定QA_2/part_11.mp3",
+    "length": "2684061",
+    "pub_date": "Thu, 09 Apr 2026 05:25:14 +0000"
+  },
+  {
+    "title": "[想定QA] パート 12",
+    "description": "想定QA.txt の読み上げ音声",
+    "path": "episodes/想定QA_2/part_12.mp3",
+    "length": "2060877",
+    "pub_date": "Thu, 09 Apr 2026 05:25:14 +0000"
+  },
+  {
+    "title": "[Presentation_Script] パート 1",
+    "description": "Presentation_Script.txt の読み上げ音声",
+    "path": "episodes/Presentation_Script/part_1.mp3",
+    "length": "2758437",
+    "pub_date": "Thu, 09 Apr 2026 06:02:59 +0000"
+  },
+  {
+    "title": "[Presentation_Script] パート 2",
+    "description": "Presentation_Script.txt の読み上げ音声",
+    "path": "episodes/Presentation_Script/part_2.mp3",
+    "length": "2828397",
+    "pub_date": "Thu, 09 Apr 2026 06:02:59 +0000"
+  },
+  {
+    "title": "[Presentation_Script] パート 3",
+    "description": "Presentation_Script.txt の読み上げ音声",
+    "path": "episodes/Presentation_Script/part_3.mp3",
+    "length": "2825997",
+    "pub_date": "Thu, 09 Apr 2026 06:02:59 +0000"
+  },
+  {
+    "title": "[Presentation_Script] パート 4",
+    "description": "Presentation_Script.txt の読み上げ音声",
+    "path": "episodes/Presentation_Script/part_4.mp3",
+    "length": "2723613",
+    "pub_date": "Thu, 09 Apr 2026 06:02:59 +0000"
+  },
+  {
+    "title": "[Presentation_Script] パート 5",
+    "description": "Presentation_Script.txt の読み上げ音声",
+    "path": "episodes/Presentation_Script/part_5.mp3",
+    "length": "809661",
+    "pub_date": "Thu, 09 Apr 2026 06:02:59 +0000"
   }
 ]
